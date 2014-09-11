@@ -11,7 +11,7 @@ $core_v2_blog.Current.Name: $core_v2_blogPost.Current.Title
 #set($post = $core_v2_blogPost.Current)
 #set($user = $core_v2_user.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS,  arial; font-size: 12pt;">
 	<div style="font-size: 12pt;">
 		<b><a href="$core_v2_blogUrls.BlogPost($post.Id)">$post.Title</a></b>
 	</div>
@@ -22,7 +22,7 @@ $core_v2_blog.Current.Name: $core_v2_blogPost.Current.Title
 #else
 	<p>$email_utility.RenderHtml($post)</p>
 #end
-	<div style="color: #7F7F7F; font-size: 8pt;">
+	<div style="color: #7F7F7F; font-size: 12px;">
 		#set($file = false)
 		#set($file = $post.File)
 		#if ($file)
@@ -39,7 +39,7 @@ $core_v2_blog.Current.Name: $core_v2_blogPost.Current.Title
 		</p>
 	</div>
 </div>
-<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+<p style="font-family: arial; color: #7F7F7F; font-size: 12pt;">
     <a href="$core_v2_urls.ReportAbuse($core_v2_blogUrls.BlogPost($post.Id), $post.ContentId, $post.ContentTypeId)">Flag</a> this post as spam/abuse.
 </p>
 			]]>
