@@ -18,7 +18,7 @@ $params.Add("AbuseAppealId", $appeal.AppealId)
 #end
 #set($appealUrl = $core_v2_urls.AppealQueue($params, false))
  
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family: Trebuchet MS, arial; font-size: 12px;">
     <p>The item, <b>$post.HtmlName('')</b>, in <a href="$post.Application.Container.Url">$post.Application.Container.HtmlName('')</a> has been flagged as abuse and no longer appears on the site.</p>
     <p>The author, $author.DisplayName, has appealed the decision:
         <p style="color: #7F7F7F;">
