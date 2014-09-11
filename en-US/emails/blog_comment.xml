@@ -10,7 +10,7 @@ $core_v2_blog.Current.Name: new comment for $core_v2_blogPost.Current.Title
 #set($post = $core_v2_blogPost.Current)
 #set($comment = $core_v2_blogComment.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family: Trebuchet MS, arial; font-size: 12px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$core_v2_blogUrls.BlogPost($post.Id)">$post.Title</a>: new comment</b>
 	</div>
@@ -18,13 +18,13 @@ $core_v2_blog.Current.Name: new comment for $core_v2_blogPost.Current.Title
 	<p>
 		$email_utility.RenderHtml($comment)
 	</p>
-	<div style="color: #7F7F7F; font-size: 8pt;">
+	<div style="color: #7F7F7F; font-size: 12px;">
 		<p>
 			<a href="$core_v2_blogUrls.BlogPost($post.Id)">View this post online</a>.
 		</p>
 	</div>
 </div>
-<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+<p style="font-family:Trebuchet MS, arial; color: #7F7F7F; font-size: 12px;">
     <a href="$core_v2_urls.ReportAbuse($core_v2_blogUrls.BlogPost($post.Id), $comment.CommentId, $comment.CommentContentTypeId)">Flag</a> this comment as spam/abuse.
 </p>
 			]]>
