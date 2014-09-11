@@ -11,7 +11,7 @@ $core_v2_blog.Current.Name: $core_v2_blogPost.Current.Title feedback
 #set($comment = $core_v2_blogComment.Current)
 #set($parent = $core_v2_blogPost.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$core_v2_blogUrls.BlogPost($parent.Id)">$parent.Title</a>: new comment</b>
 	</div>
@@ -26,7 +26,7 @@ $core_v2_blog.Current.Name: $core_v2_blogPost.Current.Title feedback
 		<a href="$core_v2_blogUrls.AdminFeedbackAction($blog.Id, "approve", $comment.Id)">Approve</a> or <a href="$core_v2_blogUrls.AdminFeedbackAction($blog.Id, "delete", $comment.Id)">delete</a> this comment.
 	</p>
 </div>
-<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+<p style="font-family:Trebuchet MS, arial; color: #7F7F7F; font-size: 12px;">
     <a href="$core_v2_urls.ReportAbuse($core_v2_blogUrls.BlogPost($parent.Id), $comment.CommentId, $comment.CommentContentTypeId)">Flag</a> this comment as spam/abuse.
 </p>
 			]]>
