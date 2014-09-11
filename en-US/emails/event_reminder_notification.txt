@@ -1,0 +1,41 @@
+From: $helpers.FormatFromAutomated()
+To: $user.Email
+Subject: REMINDER: $calendarEvent.EventTitle
+
+#mimebody("text/plain")
+REMINDER: $calendarEvent.EventTitle
+
+Just a friendly reminder about this upcoming event...
+
+---------------------------------------------------------
+$calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+---------------------------------------------------------
+$calendarEvent.FormattedDescription
+---------------------------------------------------------
+You were sent this email because you opted to receive email notifications about events.
+#end
+
+#mimebody("text/html")
+<div style="font-family: arial; font-size: 12pt;">
+<h4>REMINDER: $calendarEvent.EventTitle</h4>
+<hr/>
+<p>Just a friendly reminder about this upcoming event...</p>
+  <p>
+  $calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+  </p>
+  <hr/>
+  <div style="margin: 15px; width: 95%;">$calendarEvent.FormattedDescription</div>
+  <p>
+  To view this event online: <a href="$globals.FullPath($calendarUrls.Event($calendarEvent))">$globals.FullPath($calendarUrls.Event($calendarEvent))</a>
+  </p>
+ 
+ 
+  <div style="color: #7F7F7F; font-size: 8pt;">
+    <hr/>
+    <p>
+      you were sent this email because you opted to receive email
+      notifications about events. Please <a href="#">unsubscribe</a> if you no longer wish to receive updates.
+    </p>
+  </div>
+</div>
+#end

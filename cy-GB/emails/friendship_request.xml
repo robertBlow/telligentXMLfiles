@@ -1,0 +1,43 @@
+<emailTemplates>
+	<emailTemplate name="friendship_request">
+		<subject>
+			<![CDATA[
+Cais $core_v2_configuration.SiteName - $email_utility.SiteTerm("friendship_propercase"): $core_v2_friendship.Current.Requestor.DisplayName
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($friendship = $core_v2_friendship.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+  <p>
+    <b>Byddai $friendship.Requestor.DisplayName</b> yn hoffi eich ychwanegu fel $email_utility.SiteTerm("friend_lowercase") ar $core_v2_configuration.SiteName:
+  </p>
+  #if($friendship.RequestMessage)
+	  <div style="margin: 15px; width: 95%; font-family: arial; background-color: #F7F7F7; border-width: 5px; border-color: #F7F7F7; border-style: solid;">
+		$friendship.RequestMessage
+	  </div>
+  #end
+  <p>
+    <a href="$core_v2_urls.AcceptFriendship($friendship.Recipient.Username, $friendship.Requestor.Username)">Derbyniwch</a> neu <a href="$core_v2_urls.RejectFriendship($friendship.Recipient.Username, $friendship.Requestor.Username)">gwrthodwch</a> y cais hwn.
+  </p>
+  <p>
+	Dysgwch fwy am <a href="$core_v2_urls.User($friendship.Requestor.Id)">$friendship.Requestor.DisplayName</a>.
+  </p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($friendship = $core_v2_friendship.Current)
+
+Byddai $friendship.Requestor.DisplayName yn hoffi eich ychwanegu fel $email_utility.SiteTerm("friend_lowercase") ar $core_v2_configuration.SiteName:
+#if($friendship.RequestMessage)
+	$email_utility.RenderText($friendship.RequestMessage)
+#end
+Derbyniwch ($core_v2_urls.AcceptFriendship($friendship.Recipient.Username, $friendship.Requestor.Username)) neu gwrthodwch ($core_v2_urls.RejectFriendship($friendship.Recipient.Username, $friendship.Requestor.Username)) y cais hwn.
+Dysgwch fwy am $friendship.Requestor.DisplayName: $core_v2_urls.User($friendship.Requestor.Id)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

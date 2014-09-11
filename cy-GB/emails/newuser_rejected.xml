@@ -1,0 +1,23 @@
+<emailTemplates>
+	<emailTemplate name="newuser_rejected">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName:  ni chymeradwywyd eich cais i fod yn aelod
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+<div style="font-family: arial; font-size: 10pt;">
+  <p>
+....Roeddech chi wedi gofyn am gael bod yn aelod o $core_v2_configuration.SiteName, ond chafodd eich cais ddim ei gymeradwyo.
+  </p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+Roeddech chi wedi gofyn am gael bod yn aelod o $core_v2_configuration.SiteName, ond chafodd eich cais ddim ei gymeradwyo.
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

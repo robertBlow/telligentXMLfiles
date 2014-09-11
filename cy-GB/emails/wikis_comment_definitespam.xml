@@ -1,0 +1,52 @@
+<emailTemplates>
+	<emailTemplate name="wikis_comment_definitespam">
+		<subject>
+			<![CDATA[
+$core_v2_wikiPage.Current.Title: Cadarnhau bod sylw wici yn sbam
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($page = $core_v2_wikiPage.Current)
+#set($comment = $core_v2_wikiComment.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<p>
+		<strong style="color:#FF0000">Nodwyd bod sylw wici yn sbam gan y rhwystrwr sbam $core_v2_configuration.SiteName.</strong>
+	</p>
+	<div style="font-family: arial; font-size: 10pt;">
+		<div style="font-size: 12pt; font-weight: bold;">
+			Sylw:
+		</div>
+		<p>
+			$comment.Body
+		</p>
+	</div>
+	<p style="font-family: arial; font-size: 8pt; color=#7F7F7F;">
+		<a href="$core_v2_wikiUrls.Page($page.Id)">Gweld y dudalen hon ar-lein</a>.<br/>
+		<a href="$core_v2_wikiUrls.ManageWikiPageComments($page.WikiId)">Rheoli sylwadau wici yma</a>.
+	</p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($page = $core_v2_wikiPage.Current)
+#set($comment = $core_v2_wikiComment.Current)
+
+** Nodwyd bod sylw wici yn sbam gan y rhwystrwr sbam $core_v2_configuration.SiteName. **
+
+Safle: $core_v2_urls.Home()
+Wici: $core_v2_wikiUrls.Wiki($page.WikiId)
+Tudalen: $page.Title at $core_v2_wikiUrls.Page($page.Id)
+Rheoli sylwadau wici yma: $page.Title at $core_v2_wikiUrls.ManageWikiPageComments($page.WikiId)
+Postiwyd gan: $comment.Author.DisplayName
+Postiwyd ar: $comment.PublishedDate
+
+Sylw:
+
+$comment.Body
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

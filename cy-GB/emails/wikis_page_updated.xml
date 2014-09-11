@@ -1,0 +1,44 @@
+<emailTemplates>
+	<emailTemplate name="wikis_page_updated">
+		<subject>
+			<![CDATA[
+$core_v2_wikiPage.Current.Title: hysbysiad diwygio
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($page = $core_v2_wikiPage.Current)
+#set($previousRevision = $page.RevisionNumber - 1)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<div style="font-size: 12pt;">
+		<b><a href="$core_v2_wikiUrls.Page($page.Id)">$page.Title</a>: diwygio #$page.RevisionNumber</b>
+	</div>
+	Golygwyd gan $page.User.DisplayName<br/>
+<div>
+	$email_utility.RenderHtml($page)
+</div>
+<div style="font-family: arial; font-size: 8pt; color=#7F7F7F;">
+	<a href="$core_v2_wikiUrls.Page($page.Id)">Gweld y dudalen hon ar-lein</a> neu <a href="$core_v2_wikiUrls.Compare($page.Id, $previousRevision, 0)">gymharu'r dudalen hon â fersiynau eraill a ddiwygiwyd</a>.
+</div>
+<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+    <a href="$core_v2_urls.ReportAbuse($core_v2_wikiUrls.Page($page.Id), $page.ContentId, $page.ContentTypeId)">Nodi bod</a> y dudalen hon yn sbam/cynnwys difrïol.
+</p>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($page = $core_v2_wikiPage.Current)
+
+Mae fersiwn diwygiedig newydd o'r dudalen wici wedi'i gwneud.
+
+Tudalen wici: $page.Title
+Awdur: $page.User.DisplayName
+Postiwyd i: $core_v2_wiki.Current.Name
+Dolen: $core_v2_wikiUrls.Page($page.Id)
+
+$email_utility.RenderText($page)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

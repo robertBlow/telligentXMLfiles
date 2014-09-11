@@ -1,0 +1,24 @@
+<emailTemplates>
+	<emailTemplate name="newuser_pending">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName: aros i gais am fod yn aelod gael ei gymeradwyo
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+<div style="font-family: arial; font-size: 10pt;">
+	<p>Rydym wedi cael eich cais am gael ymuno â $core_v2_configuration.SiteName gyda'r enw defnyddiwr "<b>$core_v2_user.Current.Username</b>".</p>
+	<p>Pan fydd rheolwr cymuned wedi cymeradwyo'ch cais, byddwch yn cael e-bost yn cadarnhau bod eich cyfrif yn weithredol.</p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+Rydym wedi cael eich cais am gael ymuno â $core_v2_configuration.SiteName gyda'r enw defnyddiwr $core_v2_user.Current.Username. 
+
+Pan fydd rheolwr cymuned wedi cymeradwyo'ch cais, byddwch yn cael e-bost yn cadarnhau bod eich cyfrif yn weithredol.
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

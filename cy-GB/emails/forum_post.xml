@@ -1,0 +1,105 @@
+<emailTemplates>
+	<emailTemplate name="forum_post">
+		<subject>
+			<![CDATA[
+#if($core_v2_forumThread.Current)
+	#set($post = $core_v2_forumThread.Current)
+#else
+	#set($post = $core_v2_forumReply.Current)
+#end
+#set($forum = $core_v2_forum.Get($post.ForumId))
+$post.Subject
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#if($core_v2_forumThread.Current)
+	#set($post = $core_v2_forumThread.Current)
+	#set($url = $core_v2_forumUrls.Thread($post.Id))
+	#set($threadId = $post.Id)
+	#set($ContentTypeId = $post.ContentTypeId)
+	#set($createdByText = "Thread created by")
+#else
+	#set($post = $core_v2_forumReply.Current)
+	#set($url = $core_v2_forumUrls.ForumReply($post.Id))
+	#set($threadId = $post.ThreadId)
+	#set($ContentTypeId = $post.GlobalContentTypeId)
+	#set($createdByText = "Reply by")
+#end
+
+<style type="text/css">
+	blockquote.quote { border:1px dotted #CCCCCC; padding:5px; }
+	blockquote div.quote-user { font-weight: bold; }
+	blockquote div.quote-content p { margin: 0; font-style: italic; }
+</style>
+<div style="font-family: arial; font-size: 10pt;">
+	<div style="font-size: 12pt;">
+		<b><a href="$url">$post.Subject</a></b>
+	</div>
+	$createdByText $post.Author.DisplayName
+	<div>$email_utility.RenderHtml($post)</div>
+	<div style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+		#set ($hasFile = false)
+		#if ($post.File)
+			#set ($hasFile = true)
+		#elseif ($post.EmailFiles && $post.EmailFiles.Count > 0)
+			#set ($hasFile = true)
+		#end
+		#if ($hasFile)
+			<div style="border-width: 15px; border-color: #F7F7F7; border-style: solid; width: 95%;">
+				<b>Atodiadau:</b><br/>
+				#if ($post.File)
+					<a href="$post.File.FileUrl">$post.File.FileName</a><br />
+				#end
+				#if ($post.EmailFiles && $post.EmailFiles.Count > 0)
+					#foreach($emailFile in $post.EmailFiles)
+					#each
+						<a href="$emailFile.DirectDownloadUrl">$emailFile.FileName</a><br />
+					#end
+				#end
+			</div>
+		#end
+		<a href="$core_v2_forumUrls.MuteThread($threadId)">Stopio cael negeseuon e-bost</a> am y pwnc hwn.
+	</div>
+</div>
+<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+    <a href="$core_v2_urls.ReportAbuse($url, $post.ContentId, $ContentTypeId)">Nodi bod</a> y post hwn yn sbam/cynnwys difrïol.
+</p>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#if($core_v2_forumThread.Current)
+	#set($post = $core_v2_forumThread.Current)
+	#set($url = $core_v2_forumUrls.Thread($post.Id))
+#else
+	#set($post = $core_v2_forumReply.Current)
+	#set($url = $core_v2_forumUrls.ForumReply($post.Id))
+#end
+#set($forum = $core_v2_forum.Get($post.ForumId))
+
+Oddi wrth: $post.Author.DisplayName
+Post: $email_utility.RenderText($post.Subject)
+Postiwyd yn: $email_utility.RenderText($forum.Name)
+Dolen: $url
+
+$email_utility.RenderText($post)
+
+#set($attachments = $email_attachments.Current)
+#if($attachments && $attachments.Count > 0)
+Atodiadau:
+#foreach($attachmentUrl in $attachments.Keys)
+  $attachments.Get($attachmentUrl): $attachmentUrl
+#end
+#end
+
+--
+Anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost pan mae rhywun yn creu edefyn newydd.
+
+I ddad-danysgrifio yng nghyd-destun:
+- ...yr edefyn hwn yn unig, analluogwch hysbysiadau yn $url.
+- ...pob hysbysiad e-bost gan $core_v2_configuration.SiteName, llywiwch i "Gosodiadau", cliciwch ar y tab "E-bost", yna o dan yr adran "Ffurfweddu e-bost", newidiwch y gosodiadau Anfon hysbysiadau i "Na".
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

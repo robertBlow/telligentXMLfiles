@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<emailTemplates>
+  <emailTemplate name="abuse_notify_board_of_abusive_content">
+    <subject>
+      <![CDATA[
+Angen adolygu post yn $core_v2_configuration.SiteName
+			]]>
+    </subject>
+    <htmlBody>
+      <![CDATA[
+#set($post = $core_v2_content.Current)
+#set($appeal = $core_v2_abuseAppeal.Current)
+#set($appealUrl = $core_v2_urls.AppealQueue("%{AbuseAppealId=$appeal.AppealId}", false))
+
+<div style="font-family: arial; font-size: 10pt;">
+	<div style="font-size: 12pt;">
+		<b><a href="$post.Url">$post.HtmlName('Email')</a>: Cynnwys sydd o bosib yn sbam neu'n gynnwys difrïol</b>
+	</div>
+	<p>Mae post, $post.HtmlName('email'), yn $post.Application.Container.HtmlName('Email') wedi'i nodi'n sbam neu'n gynnwys difrïol. Mae'r post wedi'i gloi a does dim modd i aelodau'r gymuned ei olygu.</p>
+	<p>Ewch i'r dudalen i'w adolygu a chymryd y camau priodol: </p>
+	<div style="color: #7F7F7F; font-size: 8pt;">
+		<a href="$post.Url">Ewch i'r dudalen i adolygu'r cynnwys a nodwyd</a>.<br />
+		<a href="$appealUrl">Adolygu'r apêl</a>.
+	</div>
+</div>
+
+			]]>
+    </htmlBody>
+    <textBody>
+      <![CDATA[
+#set($post = $core_v2_content.Current)
+#set($appeal = $core_v2_abuseAppeal.Current)
+#set($appealUrl = $core_v2_urls.AppealQueue("%{AbuseAppealId=$appeal.AppealId}", false))
+
+Pwnc: angen adolygu $post.HtmlName('Email') yn  $core_v2_configuration.SiteName
+Corff:
+
+Mae post, $post.HtmlName('Email'), yn $post.Application.Container.HtmlName('Email') wedi cael ei nodi'n sbam neu'n gynnwys difrïol. Mae'r post wedi'i gloi a does dim modd i aelodau'r gymuned ei olygu.
+Ewch i'r dudalen i adolygu'r cynnwys a nodwyd: $post.Url
+Adolygu'r apêl: $appealUrl
+
+			]]>
+    </textBody>
+  </emailTemplate>
+</emailTemplates>

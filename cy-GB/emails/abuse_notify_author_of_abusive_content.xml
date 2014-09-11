@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<emailTemplates>
+  <emailTemplate name="abuse_notify_author_of_abusive_content">
+    <subject>
+      <![CDATA[
+Mae'ch post ar $core_v2_configuration.SiteName wedi cael ei nodi'n sbam neu'n gynnwys difrïol.
+			]]>
+    </subject>
+    <htmlBody>
+      <![CDATA[
+#set($post = $core_v2_content.Current)
+#set($appeal = $core_v2_abuseAppeal.Current)
+#set($appealUrl = $core_v2_urls.AbuseAppeal($appeal.AppealId))
+#set($author = $core_v2_user.Get("%{Id=$post.CreatedByUserId}"))
+
+<div style="font-family: arial; font-size: 10pt;">
+
+<p>
+Annwyl  $author.DisplayName:<br />
+
+Mae defnyddwyr eraill wedi nodi bod eich post, $post.HtmlName('Email'), yn  $post.Application.Container.HtmlName('Email') yn amhriodol ac nid yw'n ymddangos ar y safle mwyach.
+Gwnewch yn siŵr bod eich cyfraniadau'n briodol. Os ydych yn teimlo bod hyn wedi'i wneud ar gam, cysylltwch â ni. Cliciwch <a href="$appealUrl">yma</a> i gyflwyno ffurflen apêl cyn $appeal.AppealExpires.ToShortDateString() ac fe wnawn edrych ar hyn ar unwaith.
+</p>
+
+</div>
+			]]>
+    </htmlBody>
+    <textBody>
+      <![CDATA[
+#set($post = $core_v2_content.Current)
+#set($appeal = $core_v2_abuseAppeal.Current)
+#set($appealUrl = $core_v2_urls.AbuseAppeal($appeal.AppealId))
+#set($author = $core_v2_user.Get("%{Id=$post.CreatedByUserId}"))
+
+Pwnc: mae eich post ar $core_v2_configuration.SiteName wedi cael ei nodi'n sbam neu'n gynnwys difrïol
+Corff:
+Annwyl  $author.DisplayName: 
+
+Mae defnyddwyr eraill wedi nodi bod eich post, $post.HtmlName(''), yn $post.Application.Container.HtmlName('email') yn amhriodol ac nid yw'n ymddangos ar y safle mwyach.
+Gwnewch yn siŵr bod eich cyfraniadau'n briodol. Os ydych yn teimlo bod hyn wedi'i wneud ar gam, cysylltwch â ni. Ewch i $appealUrl i gyflwyno ffurflen apêl cyn $appeal.AppealExpires.ToShortDateString() ac fe wnawn edrych ar hyn ar unwaith.
+			]]>
+    </textBody>
+  </emailTemplate>
+</emailTemplates>

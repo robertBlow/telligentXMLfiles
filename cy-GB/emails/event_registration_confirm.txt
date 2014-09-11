@@ -1,0 +1,35 @@
+Oddi wrth: $helpers.FormatFromAutomated()
+At: $user.Email
+Pwnc: Cadarnhau'r Cofrestriad ar gyfer $calendarEvent.EventTitle
+
+#mimebody("text/plain")
+Mae'ch cais i fynd i $calendarEvent.EventTitle wedi cael ei gadarnhau.
+---------------------------------------------------------
+$calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+---------------------------------------------------------
+Cod Cofrestru: $registration.Token.ToString()
+
+$calendarEvent.FormattedDescription
+
+I weld y digwyddiad hwn, ewch i $globals.FullPath($calendarUrls.Event($calendarEvent))
+
+#end
+
+#mimebody("text/html")
+<div style="font-family: arial; font-size: 12pt;">
+<h4>Mae'ch cais i fynd i $calendarEvent.EventTitle wedi cael ei gadarnhau.</h4>
+<hr/>
+  <p>
+  $calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+  </p>
+  <hr/>
+  Cod Cofrestru: $registration.Token.ToString()
+  <hr/>
+   <div style="margin: 15px; width: 95%;">$calendarEvent.FormattedDescription</div>
+ 
+  <p>
+I weld y digwyddiad hwn, ewch i <a href="$globals.FullPath($calendarUrls.Event($calendarEvent))">$globals.FullPath($calendarUrls.Event($calendarEvent))</a>
+  </p>
+ 
+</div>
+#end

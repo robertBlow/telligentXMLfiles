@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <!-- header titles -->
+  <resource name="Body">Body</resource>
+  <resource name="Header">Header</resource>
+  <resource name="Footer">Footer</resource>
+
+  <!-- START General Resources -->
+
+  <resource name="Width">Width</resource>
+  <resource name="Links">Links</resource>
+  <resource name="Title">Title</resource>
+  <resource name="PageTitle">Page title</resource>
+  <resource name="Layout">Layout</resource>
+  <resource name="ForumPost">Forum post</resource>
+
+  <!-- START site Resources -->
+  <resource name="SiteTitle">Site title</resource>
+
+</root>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<root>
+	<!-- 
+		Tag used by blog search spiders such as technorati.
+		Indicates that the destination of that hyperlink is an author-designated "tag" (or keyword/subject) 
+		More info: http://microformats.org/wiki/reltag
+	-->
+	<relation value="tag">tag</relation>
+
+	<!-- 
+		Nofollow used by Google and other search engines.
+		Designates that the engine should not follow the link and not give the URL's page ranking credit for this link
+		More info: http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html
+	-->
+	<relation value="nofollow">dim dilyn</relation>
+
+	<!-- 
+		The following rel values are part of XFN (XHTML Friends Network) which is used by some spiders.
+		XFN represents human relationships using hyperlinks.
+		More info: http://gmpg.org/xfn/
+	-->
+	<!-- friendship -->
+	<relation value="contact">cyswllt</relation>
+	<relation value="acquaintance">cydnabod</relation>
+	<relation value="friend">ffrind</relation>
+
+	<!-- physical -->
+	<relation value="met">cyfarfod</relation>
+
+	<!-- professional -->
+	<relation value="co-worker">cydweithiwr</relation>
+	<relation value="colleague">cydweithiwr</relation>
+
+	<!-- geographical -->
+	<relation value="co-resident">cyd-breswylydd</relation>
+	<relation value="neighbor">cymydog</relation>
+
+	<!-- family -->
+	<relation value="child">plentyn</relation>
+	<relation value="parent">rhiant</relation>
+	<relation value="sibling">brawd/chwaer</relation>
+	<relation value="spouse">gŵr/gwraig</relation>
+	<relation value="kin">perthynas</relation>
+
+	<!-- romantic -->
+	<relation value="muse">ysbrydoliaeth</relation>
+	<relation value="crush">gwirioni ar rywun</relation>
+	<relation value="date">dêt</relation>
+	<relation value="sweetheart">cariad</relation>
+
+	<!-- identity -->
+	<relation value="me">fi</relation>
+
+</root>

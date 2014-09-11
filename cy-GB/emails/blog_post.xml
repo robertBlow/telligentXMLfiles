@@ -1,0 +1,69 @@
+<emailTemplates>
+	<emailTemplate name="blog_post">
+		<subject>
+			<![CDATA[
+$core_v2_blog.Current.Name: $core_v2_blogPost.Current.Title
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+#set($post = $core_v2_blogPost.Current)
+#set($user = $core_v2_user.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<div style="font-size: 12pt;">
+		<b><a href="$core_v2_blogUrls.BlogPost($post.Id)">$post.Title</a></b>
+	</div>
+	Gan $post.Author.DisplayName<br/>
+	
+#if($post.Excerpt && $post.Excerpt != '')
+	<p>$email_utility.RenderHtml($post.Excerpt) (<a href="$core_v2_blogUrls.BlogPost($post.Id)">darllen mwy</a>)</p>
+#else
+	<p>$email_utility.RenderHtml($post)</p>
+#end
+	<div style="color: #7F7F7F; font-size: 8pt;">
+		#set($file = false)
+		#set($file = $post.File)
+		#if ($file)
+			<div style="border-width: 15px; border-color: #F7F7F7; border-style: solid; width: 95%;">
+				<b>Atodiadau:</b><br/>
+				<a href="$file.FileUrl">$file.FileName</a>
+			</div>
+		#end
+		<p>
+		<a href="$core_v2_blogUrls.BlogPost($post.Id)">Gweld y post hwn ar-lein</a>.
+		</p>
+		<p>
+			Rydych wedi cael yr hysbysiad hwn am eich bod wedi tanysgrifio i'r blog.  I ddad-danysgrifio, ewch <a href="$core_v2_blogUrls.Unsubscribe($blog.Id, $user.ExtendedAttributes.get_item('SubscriptionId').Value)">yma</a>.
+		</p>
+	</div>
+</div>
+<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+    <a href="$core_v2_urls.ReportAbuse($core_v2_blogUrls.BlogPost($post.Id), $post.ContentId, $post.ContentTypeId)">Nodi bod</a> y post hwn yn sbam/cynnwys difrïol.
+</p>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+#set($post = $core_v2_blogPost.Current)
+#set($user = $core_v2_user.Current)
+			
+Cyflwynwyd post blog newydd i $blog.Name:
+
+Pwnc: $post.Title
+Gan: $post.Author.DisplayName
+Dolen: $core_v2_blogUrls.BlogPost($post.Id)
+
+#if($post.Excerpt && $post.Excerpt != '')
+	$email_utility.RenderText($post.Excerpt)
+#else
+	$email_utility.RenderText($post)
+#end
+
+Rydych wedi cael yr hysbysiad hwn am eich bod wedi tanysgrifio i'r blog.  I ddad-danysgrifio, ewch yma: $core_v2_blogUrls.Unsubscribe($blog.Id, $user.ExtendedAttributes.get_item('SubscriptionId').Value)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

@@ -1,0 +1,50 @@
+<emailTemplates>
+	<emailTemplate name="forum_postapprovedandmoved">
+		<subject>
+			<![CDATA[
+Mae post $core_v2_forum.Current.Name wedi'i gymeradwyo: #if($core_v2_forumReply.Current)$core_v2_forumReply.Current.Subject#else$core_v2_forumThread.Current.Subject#end
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#if($core_v2_forumReply.Current)
+	#set($post = $core_v2_forumReply.Current)
+	#set($url = $core_v2_forumUrls.ForumReply($post.Id))
+#else
+	#set($post = $core_v2_forumThread.Current)
+	#set($url = $core_v2_forumUrls.Thread($post.Id))
+#end
+
+<div style="font-family: arial; font-size: 10pt;">
+	Cymeradwywyd eich post Holi ac Ateb, ond mae wedi cael ei symud i leoliad gwahanol.<br/><br/>
+	<div style="margin: 15px; background-color: #F7F7F7; border-width: 5px; border-color: #F7F7F7; border-style: solid; color: #000000; width: 95%">
+		<b>Pwnc:</b> $email_utility.RenderHtml($post.Subject)<br/>
+		<b>Symudwyd i:</b> $email_utility.RenderHtml($core_v2_forum.Current.Name)
+	</div>
+</div>
+
+<div style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+	Anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost pan fydd rhywun wedi ymateb i'r edefyn Holi ac Ateb hwn. Gweld yr edefyn <a href="$url">yma</a>.
+    <p>I ddad-danysgrifio yng nghyd-destun yr edefyn hwn yn unig, <a href="$url">analluogwch hysbysiadau e-bost ar-lein</a>. I analluogi pob hysbysiad e-bost o $core_v2_configuration.SiteName, llywiwch i "Gosodiadau", cliciwch ar y tab "E-bost", yna o dan yr adran "Ffurfweddu e-bost", newidiwch y gosodiadau "Anfon hysbysiadau" i "Na".</p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#if($core_v2_forumReply.Current)
+	#set($post = $core_v2_forumReply.Current)
+	#set($url = $core_v2_forumUrls.ForumReply($post.Id))
+#else
+	#set($post = $core_v2_forumThread.Current)
+	#set($url = $core_v2_forumUrls.Thread($post.Id))
+#end
+
+Cymeradwywyd eich post Holi ac Ateb, ond mae wedi cael ei symud i leoliad gwahanol.
+
+Pwnc: $email_utility.RenderText($post.Subject)
+Symudwyd i: $email_utility.RenderText($core_v2_forum.Current.Name)
+Dolen: $url
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

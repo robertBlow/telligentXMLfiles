@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tags>
+  <tag type="ApertureValue">
+    <description>Gwerth Agorfa</description>
+    <format />
+  </tag>
+  <tag type="Artist">
+    <description>Artist</description>
+    <format />
+  </tag>
+  <tag type="BitsPerSample">
+    <description>Didau fesul Sampl</description>
+    <format />
+  </tag>
+  <tag type="BrightnessValue">
+    <description>Gwerth Disgleirdeb</description>
+    <format />
+  </tag>
+  <tag type="CFAPattern">
+    <description>Patrwm CFA</description>
+    <format />
+  </tag>
+  <tag type="ColorSpace">
+    <description>Gofod Lliw</description>
+    <format />
+  </tag>
+  <tag type="ComponentsConfiguration">
+    <description>Ffurfweddu Cydrannau</description>
+    <format />
+  </tag>
+  <tag type="CompressedBitsPerPixel">
+    <description>Didau Cywasgedig fesul Picsel</description>
+    <format />
+  </tag>
+  <tag type="Compression">
+    <description>Cywasgu</description>
+    <format />
+  </tag>
+  <tag type="Contrast">
+    <description>Cyferbynnedd</description>
+    <format />
+  </tag>
+  <tag type="Copyright">
+    <description>Hawlfraint</description>
+    <format />
+  </tag>
+  <tag type="CustomRendered">
+    <description>Proses Bersonol wedi&apos;i chyfleu</description>
+    <format />
+  </tag>
+  <tag type="DateTime">
+    <description>Dyddiad/Amser</description>
+    <format style="DateTime" />
+  </tag>
+  <tag type="DateTimeDigitized">
+    <description>Dyddiad Amser wedi&apos;i Ddigideiddio</description>
+    <format />
+  </tag>
+  <tag type="DateTimeOriginal">
+    <description>Dyddiad Amser Gwreiddiol</description>
+    <format />
+  </tag>
+  <tag type="DeviceSettingDescription">
+    <description>Disgrifiad o Osodiad Dyfais</description>
+    <format />
+  </tag>
+  <tag type="DigitalZoomRatio">
+    <description>Cymhareb Nesáu/Pellhau Digidol</description>
+    <format />
+  </tag>
+  <tag type="ExifVersion">
+    <description>Fersiwn Exif</description>
+    <format />
+  </tag>
+  <tag type="ExposureBiasValue">
+    <description>Gwerth Rheolydd Goleuni</description>
+    <format />
+  </tag>
+  <tag type="ExposureIndex">
+    <description>Mynegai Goleuni</description>
+    <format />
+  </tag>
+  <tag type="ExposureMode">
+    <description>Modd Goleuni</description>
+    <format />
+  </tag>
+  <tag type="ExposureProgram">
+    <description>Rhaglen Goleuni </description>
+    <format />
+  </tag>
+  <tag type="ExposureTime">
+    <description>Caead</description>
+    <format>{0} eil</format>
+  </tag>
+  <tag type="FileSource">
+    <description>Ffynhonnell Ffeil</description>
+    <format />
+  </tag>
+  <tag type="Flash">
+    <description>Fflach</description>
+    <format />
+  </tag>
+  <tag type="FlashEnergy">
+    <description>Grym Fflach</description>
+    <format />
+  </tag>
+  <tag type="FlashPixVersion">
+    <description>Fersiwn Pics Fflach</description>
+    <format />
+  </tag>
+  <tag type="FNumber">
+    <description>Agorfa</description>
+    <format style="Decimal">f/{0}</format>
+  </tag>
+  <tag type="FocalLength">
+    <description>Hyd Ffocal</description>
+    <format style="Decimal">{0} mm</format>
+  </tag>
+  <tag type="FocalLengthIn35mmFilm">
+    <description>Hyd Ffocal mewn Ffilm 35mm</description>
+    <format />
+  </tag>
+  <tag type="FocalPlaneResolutionUnit">
+    <description>Uned Cydraniad Wyneb Ffocal </description>
+    <format />
+  </tag>
+  <tag type="FocalPlaneXResolution">
+    <description>Cydraniad X Wyneb Ffocal</description>
+    <format />
+  </tag>
+  <tag type="FocalPlaneYResolution">
+    <description>Cydraniad Y Wyneb Ffocal</description>
+    <format />
+  </tag>
+  <tag type="GainControl">
+    <description>Ennill Rheolaeth</description>
+    <format />
+  </tag>
+  <tag type="ImageDescription">
+    <description>Disgrifiad o Ddelwedd</description>
+    <format />
+  </tag>
+  <tag type="ImageLength">
+    <description>Hyd Delwedd</description>
+    <format />
+  </tag>
+  <tag type="ImageUniqueID">
+    <description>ID Unigryw Delwedd</description>
+    <format />
+  </tag>
+  <tag type="ImageWidth">
+    <description>Lled Delwedd</description>
+    <format />
+  </tag>
+  <tag type="InteroperabilityIndex">
+    <description>Mynegai Gallu i Ryngweithredu</description>
+    <format />
+  </tag>
+  <tag type="InteroperabilityVersion">
+    <description>Fersiwn Gallu i Ryngweithredu</description>
+    <format />
+  </tag>
+  <tag type="ISOSpeedRatings">
+    <description>ISO</description>
+    <format />
+  </tag>
+  <tag type="JPEGInterchangeFormat">
+    <description>Fformat Cyfnewid JPEG</description>
+    <format />
+  </tag>
+  <tag type="JPEGInterchangeFormatLength">
+    <description>Hyd Fformat Cyfnewid JPEG</description>
+    <format />
+  </tag>
+  <tag type="LightSource">
+    <description>Ffynhonnell Golau</description>
+    <format />
+  </tag>
+  <tag type="Make">
+    <description>Math</description>
+    <format />
+  </tag>
+  <tag type="MakerNote">
+    <description>Nodyn i Wneuthurwyr</description>
+    <format />
+  </tag>
+  <tag type="MaxApertureValue">
+    <description>Gwerth Mwyaf yr Agorfa</description>
+    <format />
+  </tag>
+  <tag type="MeteringMode">
+    <description>Modd Mesur Goleuni</description>
+    <format />
+  </tag>
+  <tag type="Model">
+    <description>Camera</description>
+    <format />
+  </tag>
+  <tag type="OECF">
+    <description>OECF</description>
+    <format />
+  </tag>
+  <tag type="Orientation">
+    <description>Gogwydd</description>
+    <format />
+  </tag>
+  <tag type="PhotometricInterpretation">
+    <description>Dehongliad Ffotometrig</description>
+    <format />
+  </tag>
+  <tag type="PixelXDimension">
+    <description>Dimensiwn Picsel X</description>
+    <format />
+  </tag>
+  <tag type="PixelYDimension">
+    <description>Dimensiwn Picsel Y</description>
+    <format />
+  </tag>
+  <tag type="PlanarConfiguration">
+    <description>Ffurfweddiad Planar</description>
+    <format />
+  </tag>
+  <tag type="PrimaryChromaticities">
+    <description>Cromatigedd Sylfaenol</description>
+    <format />
+  </tag>
+  <tag type="ReferenceBlackWhite">
+    <description>Cyfeirnod Du Gwyn</description>
+    <format />
+  </tag>
+  <tag type="RelatedImageLength">
+    <description>Hyd Delwedd Perthynol</description>
+    <format />
+  </tag>
+  <tag type="RelatedImageWidth">
+    <description>Lled Delwedd Perthynol</description>
+    <format />
+  </tag>
+  <tag type="RelatedSoundFile">
+    <description>Ffeil Sain Perthnasol</description>
+    <format />
+  </tag>
+  <tag type="ResolutionUnit">
+    <description>Uned Cydraniad</description>
+    <format />
+  </tag>
+  <tag type="RowsPerStrip">
+    <description>Rhesi fesul Stribed</description>
+    <format />
+  </tag>
+  <tag type="SamplesPerPixel">
+    <description>Samplau fesul Picsel</description>
+    <format />
+  </tag>
+  <tag type="Saturation">
+    <description>Dirlawnder</description>
+    <format />
+  </tag>
+  <tag type="SceneCaptureType">
+    <description>Math Cipio Golygfa</description>
+    <format />
+  </tag>
+  <tag type="SceneType">
+    <description>Math Golygfa</description>
+    <format />
+  </tag>
+  <tag type="SensingMethod">
+    <description>Dull Synhwyro</description>
+    <format />
+  </tag>
+  <tag type="Sharpness">
+    <description>Eglurder</description>
+    <format />
+  </tag>
+  <tag type="ShutterSpeedValue">
+    <description>Gwerth Cyflymder Caead</description>
+    <format />
+  </tag>
+  <tag type="Software">
+    <description>Meddalwedd</description>
+    <format />
+  </tag>
+  <tag type="SpatialFrequencyResponse">
+    <description>Ymateb Amledd Gofodol</description>
+    <format />
+  </tag>
+  <tag type="SpectralSensitivity">
+    <description>Sensitifrwydd Sbectrwm</description>
+    <format />
+  </tag>
+  <tag type="StripByteCounts">
+    <description>Nifer y Beit mewn Stribed</description>
+    <format />
+  </tag>
+  <tag type="StripOffsets">
+    <description>Cilosod Stribedi</description>
+    <format />
+  </tag>
+  <tag type="SubjectArea">
+    <description>Testun</description>
+    <format />
+  </tag>
+  <tag type="SubjectDistance">
+    <description>Pellter y Testun</description>
+    <format />
+  </tag>
+  <tag type="SubjectDistanceRange">
+    <description>Amrediad Pellter y Testun</description>
+    <format />
+  </tag>
+  <tag type="SubjectLocation">
+    <description>Lleoliad y Testun</description>
+    <format />
+  </tag>
+  <tag type="SubsecTime">
+    <description>Amser Tan-eiliad</description>
+    <format />
+  </tag>
+  <tag type="SubsecTimeDigitized">
+    <description>Amser Tan-eiliad wedi&apos;i ddigideiddio</description>
+    <format />
+  </tag>
+  <tag type="SubsecTimeOriginal">
+    <description>Amser Tan-eiliad Gwreiddiol</description>
+    <format />
+  </tag>
+  <tag type="TransferFunction">
+    <description>Swyddogaeth Trosglwyddo</description>
+    <format />
+  </tag>
+  <tag type="UserComment">
+    <description>Sylwadau Defnyddiwr</description>
+    <format />
+  </tag>
+  <tag type="WhiteBalance">
+    <description>Cydbwysedd lliw</description>
+    <format />
+  </tag>
+  <tag type="WhitePoint">
+    <description>Pwynt gwyn</description>
+    <format />
+  </tag>
+  <tag type="WindowsAuthor">
+	<description>Awdur</description>
+	<format />
+  </tag>
+  <tag type="WindowsComments">
+	<description>Sylwadau</description>
+	<format />
+  </tag>
+  <tag type="WindowsKeywords">
+	<description>Allweddeiriau</description>
+	<format />
+  </tag>
+  <tag type="WindowsSubject">
+	<description>Pwnc</description>
+	<format />
+  </tag>
+  <tag type="WindowsTitle">
+	<description>Teitl</description>
+	<format />
+  </tag>
+  <tag type="XResolution">
+    <description>Cydraniad X</description>
+    <format />
+  </tag>
+  <tag type="YCbCrCoefficients">
+    <description>Cyfernodau YCbCr</description>
+    <format />
+  </tag>
+  <tag type="YCbCrPositioning">
+    <description>Lleoli YCbCr</description>
+    <format />
+  </tag>
+  <tag type="YCbCrSubSampling">
+    <description>Is-samplu YCbCr</description>
+    <format />
+  </tag>
+  <tag type="YResolution">
+    <description>Cydraniad Y</description>
+    <format />
+  </tag>
+</tags>

@@ -1,0 +1,21 @@
+<emailTemplates>
+	<emailTemplate name="forum_moderationneeded">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName: postiadau yn aros i gael eu safoni
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+<div style="font-family: arial; font-size: 10pt;">
+    Mae postiadau Holi ac Ateb yn aros i gael eu safoni gennych chi <a href="$core_v2_forumUrls.ModerateForum($core_v2_forum.Current.Id)">yma</a>.
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+Mae postiadau Holi ac Ateb yn aros i gael eu safoni gennych chi. Gallwch eu gweld yn: $core_v2_forumUrls.ModerateForum($core_v2_forum.Current.Id)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

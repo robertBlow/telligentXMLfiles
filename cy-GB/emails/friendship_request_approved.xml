@@ -1,0 +1,30 @@
+<emailTemplates>
+	<emailTemplate name="friendship_request_approved">
+		<subject>
+			<![CDATA[
+Cadarnhau $core_v2_configuration.SiteName - $email_utility.SiteTerm("friendship_propercase"): $core_v2_friendship.Current.Recipient.DisplayName
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($friendship = $core_v2_friendship.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+  <p>
+    <b>Mae $friendship.Recipient.DisplayName</b> wedi derbyn eich cais $email_utility.SiteTerm("friendship_lowercase").
+  </p>
+  <p>
+    <a href="$core_v2_urls.Friends($friendship.Requestor.Id)">Gweld pob un o'ch $email_utility.SiteTerm("friends_lowercase") ar-lein</a>.
+  </p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($friendship = $core_v2_friendship.Current)
+
+Mae $friendship.Recipient.DisplayName wedi derbyn eich cais $email_utility.SiteTerm("friendship_lowercase"). Gweld y rhestr o bob un o'ch $email_utility.SiteTerm("friends_lowercase") yn $core_v2_urls.Friends($friendship.Requestor.Id).
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

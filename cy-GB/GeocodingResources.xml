@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resource name ="geocoding_Address">Cyfeiriad</resource>
+  <resource name ="geocoding_Loading">Wrthi&apos;n llwytho map...</resource>
+
+  <resource name ="geocoding_MapWidgetName">Codau cyfesurynnau daearyddol - map â chyfesurynnau daearyddol (BETA)</resource>
+  <resource name ="geocoding_MapWidgetDescription">Yn dangos map ar gyfer cyfeiriad penodol, ar gyfer prawf BETA yn unig</resource>
+  <resource name ="geocoding_MapWidgetTitle">Map</resource>
+  <resource name ="geocoding_MapWidget_Height">Uchder map</resource>
+  <resource name ="geocoding_MapWidget_Width">Lled map</resource>
+  <resource name ="geocoding_MapWidget_Zoom">Nesáu/pellhau&apos;r map</resource>
+  
+</root>

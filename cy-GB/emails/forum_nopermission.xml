@@ -1,0 +1,50 @@
+<emailTemplates>
+	<emailTemplate name="forum_nopermission">
+		<subject>
+			<![CDATA[
+Neges heb ei phostio - caniatâd wedi'i wrthod
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($groupMembership = $core_v2_groupMembership.Current)
+#set($group = $core_v2_group.Current)
+#set($message = $email_emailMessage.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	Roeddech chi wedi ceisio postio neges i Holi ac Ateb ond does gennych chi ddim hawl gwneud hynny ar hyn o bryd.<br/><br/>
+#if($groupMembership || $group.GroupType == "Dim ymuno")
+	<a href="$core_v2_groupUrls.Group($group.Id)">Cysylltwch â pherchennog y grŵp</a> os ydych chi'n credu y dylech fod â hawl.
+#elseif($group.GroupType == "Agored i'r Cyhoedd")
+	Ewch i <a href="$core_v2_groupUrls.Group($group.Id)">$group.Name</a> a dewis "Ymuno â grŵp" yn ardal y faner er mwyn cael caniatâd.
+#else
+	Ewch i <a href="$core_v2_groupUrls.Group($group.Id)">$group.Name</a> a gwneud cais am ymuno â’r grŵp er mwyn cael caniatâd.
+#end
+	<div style="margin: 15px">
+		<b>Pwnc: $message.Subject</b><br/>
+		Corff: $email_utility.RenderHtml($message.Body)
+	</div>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($groupMembership = $core_v2_groupMembership.Current)
+#set($group = $core_v2_group.Current)
+#set($message = $email_emailMessage.Current)
+
+Roeddech chi wedi ceisio postio neges i Holi ac Ateb a does gennych chi ddim hawl i wneud hynny ar hyn o bryd.
+#if($groupMembership || $group.GroupType == "Dim ymuno")
+Ewch i $core_v2_groupUrls.Group($group.Id) i gysylltu â pherchennog y grŵp os ydych chi'n credu y dylech fod â hawl.
+#elseif($group.GroupType == "Agored i'r Cyhoedd")
+Ewch i $core_v2_groupUrls.Group($group.Id) a dewis "Ymuno â'r grŵp" yn ardal y faner er mwyn cael caniatâd.
+#else
+Ewch i $core_v2_groupUrls.Group($group.Id) a gwneud cais am ymuno â'r grŵp er mwyn cael caniatâd.
+#end
+
+Pwnc: $message.Subject
+Corff: $email_utility.RenderText($message.Body)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

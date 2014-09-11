@@ -1,0 +1,32 @@
+Oddi wrth: $helpers.FormatFromAutomated()
+At: $user.Email
+Pwnc: Canslo'r Cofrestriad ar gyfer $calendarEvent.EventTitle
+
+#mimebody("text/plain")
+Mae'ch cofrestriad ar gyfer $calendarEvent.EventTitle wedi cael ei ganslo neu mae trefnydd y digwyddiad wedi'i wrthod.
+---------------------------------------------------------
+$calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+---------------------------------------------------------
+$calendarEvent.FormattedDescription
+
+I gofrestru eto neu i weld y digwyddiad hwn, ewch i $globals.FullPath($calendarUrls.Event($calendarEvent))
+
+#end
+
+#mimebody("text/html")
+<div style="font-family: arial; font-size: 12pt;">
+<h4>Canslo'r Cofrestriad</h4>
+<hr/>
+	<p><strong>Mae'ch cofrestriad ar gyfer $calendarEvent.EventTitle wedi cael ei ganslo neu mae trefnydd y digwyddiad wedi'i wrthod.</strong>
+  <p>
+  $calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+  </p>
+  <hr/>
+  <div style="margin: 15px; width: 95%;">$calendarEvent.FormattedDescription</div>
+  <p>
+I gofrestru eto ar gyfer y digwyddiad hwn neu i'w weld, ewch i <a href="$globals.FullPath($calendarUrls.Event($calendarEvent))">$globals.FullPath($calendarUrls.Event($calendarEvent))</a>
+  </p>
+
+ 
+</div>
+#end

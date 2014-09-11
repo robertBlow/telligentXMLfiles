@@ -1,0 +1,41 @@
+<emailTemplates>
+	<emailTemplate name="messages_spam_deleted">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName: wedi dileu neges sbam
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($message = $email_messageContainer.Current.Message)
+#set($moderator = $core_v2_user.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<p style="color: #FF0000">Ystyriwyd bod neges yn sbam gan y Rhwystrwr sbam yn $core_v2_configuration.SiteName ac mae wedi cael ei dileu.</p>
+	<p>
+		<b>Awdur:</b> $message.Author.DisplayName<br/>
+		<b>Postiwyd ar:</b> $core_v2_language.FormatDateAndTime($message.CreatedDate, $moderator.Id)<br/>
+	</p>
+	<div style="margin: 15px; width: 95%; background-color:#F7F7F7;">
+		$email_utility.RenderHtml($message)
+	</div>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($message = $email_messageContainer.Current.Message)
+#set($moderator = $core_v2_user.Current)
+
+Ystyriwyd bod neges yn sbam posib gan y Rhwystrwr sbam yn $core_v2_configuration.SiteName.
+
+Safle: $core_v2_urls.Home()
+Awdur: $message.Author.DisplayName
+Postiwyd ar: $core_v2_language.FormatDateAndTime($message.CreatedDate, $moderator.Id)
+Neges:
+
+$email_utility.RenderText($message)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

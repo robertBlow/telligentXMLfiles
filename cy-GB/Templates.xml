@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<template id="1" type="PostDeleteReason">
+		<title></title>
+		<body></body>
+	</template>
+
+	<template id="2" type="PostDeleteReason" sortOrder="1">
+		<title>Post heb fod yn Saesneg</title>
+		<body>
+Helo,
+
+Rydych chi wedi ceisio cyflwyno&apos;r post canlynol i Holi ac Ateb [SiteName]:
+________________________________________________________
+
+[Corff Post]
+________________________________________________________
+
+Cyflwynwyd eich post fel ateb i&apos;r edefyn canlynol: [Dolen Rhiant]
+
+Rhaid i&apos;r holl bost i Holi ac Ateb [SiteName] fod yn Saesneg. Ewch yn ôl i&apos;r Holi ac Ateb ac ailgyflwyno&apos;ch post yn Saesneg.
+		</body>
+	</template>
+
+	<template id="3" type="PostDeleteReason" sortOrder="2">
+		<title>Post annealladwy</title>
+		<body>
+Helo,
+
+Rydych chi wedi ceisio cyflwyno&apos;r post canlynol i Holi ac Ateb [SiteName]:
+________________________________________________________
+
+[Corff Post]
+________________________________________________________
+
+Cyflwynwyd eich post fel ateb i&apos;r edefyn canlynol: [Dolen Rhiant]
+
+Yn anffodus, dydy&apos;ch post ddim yn gwneud synnwyr. Ewch yn ôl i&apos;r Holi ac Ateb ac ailgyflwyno&apos;ch post mewn Saesneg syml.
+		</body>
+	</template>
+
+	<template id="4" type="PostDeleteReason" sortOrder="3">
+		<title>Post heb fod ar y pwnc</title>
+		<body>
+Helo,
+
+Rydych chi wedi ceisio creu edefyn newydd ar Holi ac Ateb [SiteName] gyda&apos;r neges ganlynol:
+________________________________________________________
+
+[Corff Post]
+________________________________________________________
+
+Dydy&apos;ch neges ddim yn berthnasol i bwnc Holi ac Ateb [SiteName]. O ganlyniad, dydy&apos;ch neges ddim wedi cael ei chymeradwyo.
+		</body>
+	</template>
+
+	<template id="5" type="PostDeleteReason" sortOrder="4">
+		<title>Post sbam</title>
+		<body>
+Helo,
+
+Rydych chi wedi ceisio cyflwyno&apos;r post canlynol i Holi ac Ateb [SiteName]:
+________________________________________________________
+
+[Corff Post]
+________________________________________________________
+
+Cyflwynwyd eich post fel ateb i&apos;r edefyn canlynol: [Dolen Rhiant]
+
+Nodwyd bod eich post yn sbam gan dîm safoni fforwm Holi ac Ateb ar y safle hwn.
+		</body>
+	</template>
+</root>

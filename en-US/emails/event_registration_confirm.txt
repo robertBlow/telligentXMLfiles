@@ -1,0 +1,35 @@
+From: $helpers.FormatFromAutomated()
+To: $user.Email
+Subject: Registration Confirmation for $calendarEvent.EventTitle
+
+#mimebody("text/plain")
+Your request to attend $calendarEvent.EventTitle has been Confirmed.
+---------------------------------------------------------
+$calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+---------------------------------------------------------
+Registration Code: $registration.Token.ToString()
+
+$calendarEvent.FormattedDescription
+
+To view this event please visit $globals.FullPath($calendarUrls.Event($calendarEvent))
+
+#end
+
+#mimebody("text/html")
+<div style="font-family: arial; font-size: 12pt;">
+<h4>Your request to attend $calendarEvent.EventTitle has been Confirmed.</h4>
+<hr/>
+  <p>
+  $calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+  </p>
+  <hr/>
+  Registration Code: $registration.Token.ToString()
+  <hr/>
+   <div style="margin: 15px; width: 95%;">$calendarEvent.FormattedDescription</div>
+ 
+  <p>
+To  view this event please visit <a href="$globals.FullPath($calendarUrls.Event($calendarEvent))">$globals.FullPath($calendarUrls.Event($calendarEvent))</a>
+  </p>
+ 
+</div>
+#end

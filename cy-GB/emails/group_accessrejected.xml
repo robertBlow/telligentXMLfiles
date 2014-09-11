@@ -1,0 +1,21 @@
+<emailTemplates>
+	<emailTemplate name="group_accessrejected">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName - cais i fod yn aelod wedi'i wrthod: $core_v2_group.Current.Name
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+<div style="font-family: arial; font-size: 10pt;">
+	<p>Roeddech chi wedi gofyn am gael bod yn aelod o  $core_v2_group.Current.Name, ond chafodd eich cais ddim ei gymeradwyo y tro hwn.</p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+Roeddech chi wedi gofyn am gael bod yn aelod o $core_v2_group.Current.Name, ond chafodd eich cais ddim ei gymeradwyo y tro hwn.
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

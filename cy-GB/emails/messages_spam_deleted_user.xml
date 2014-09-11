@@ -1,0 +1,41 @@
+<emailTemplates>
+	<emailTemplate name="messages_spam_deleted_user">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName: cafodd eich neges ei dileu
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($message = $email_messageContainer.Current.Message)
+#set($user = $core_v2_user.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<p>
+		$message.Author.DisplayName,<br />
+		Cafodd y neges ganlynol a bostiwyd gennych ar $core_v2_configuration.SiteName ar $core_v2_language.FormatDateAndTime($message.CreatedDate, $user.Id) ei nodi'n sbam a chafodd ei dileu'n awtomatig.
+		Os camgymeriad oedd hyn, rhowch gynnig arall arni neu rhowch wybod i reolwr cymuned.
+	</p>
+	<div style="margin: 15px; width: 95%; background-color:#F7F7F7;">
+		$email_utility.RenderHtml($message)
+	</div>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($message = $email_messageContainer.Current.Message)
+#set($user = $core_v2_user.Current)
+
+$message.Author.DisplayName,
+
+Cafodd y neges ganlynol a bostiwyd gennych ar $core_v2_configuration.SiteName ar $core_v2_language.FormatDateAndTime($message.CreatedDate, $user.Id) ei nodi'n sbam a chafodd ei dileu'n awtomatig.
+Os camgymeriad oedd hyn, rhowch gynnig arall arni neu rhowch wybod i reolwr cymuned.
+
+Neges:
+
+$email_utility.RenderText($message)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

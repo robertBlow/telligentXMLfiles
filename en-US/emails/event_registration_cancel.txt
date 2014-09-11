@@ -1,0 +1,32 @@
+From: $helpers.FormatFromAutomated()
+To: $user.Email
+Subject: Registration Cancellation for $calendarEvent.EventTitle
+
+#mimebody("text/plain")
+Your registration to $calendarEvent.EventTitle has been cancelled or not accepted by the event organiser.
+---------------------------------------------------------
+$calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+---------------------------------------------------------
+$calendarEvent.FormattedDescription
+
+To re-register for or view this event please visit $globals.FullPath($calendarUrls.Event($calendarEvent))
+
+#end
+
+#mimebody("text/html")
+<div style="font-family: arial; font-size: 12pt;">
+<h4>Registration Cancellation</h4>
+<hr/>
+	<p><strong>Your registration to $calendarEvent.EventTitle has been cancelled or not accepted by the event organiser.</strong>
+  <p>
+  $calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+  </p>
+  <hr/>
+  <div style="margin: 15px; width: 95%;">$calendarEvent.FormattedDescription</div>
+  <p>
+To re-register for or view this event please visit <a href="$globals.FullPath($calendarUrls.Event($calendarEvent))">$globals.FullPath($calendarUrls.Event($calendarEvent))</a>
+  </p>
+
+ 
+</div>
+#end

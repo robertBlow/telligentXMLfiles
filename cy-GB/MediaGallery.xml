@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resource name="mediagallery">Oriel gyfryngau</resource>
+  <resource name="mediagalleries">Orielau cyfryngau</resource>
+
+  <!-- START tagBrowser -->
+
+  <!-- END tagBrowser  nBranch -->
+
+  <!-- Start of control  kk fields -->
+
+  <resource name="MediaGalleryPostAdmin_Categories">Tagiau</resource>
+  <resource name="MediaGalleryPostAdmin_Categories_Detail">Mae tagiau yn helpu i gadw trefn ar eich ffeiliau ac yn rhoi cyfle i&apos;ch gwylwyr ddod o hyd i ffeiliau sy&apos;n berthnasol iddynt hwy. Dewiswch dagiau sydd eisoes yn bodoli neu rhowch dagiau wedi&apos;u gwahanu gan atalnod yn y blwch testun isod.</resource>
+  <resource name="MediaGalleryPostAdmin_Name">Enw</resource>
+  <resource name="MediaGalleryPostAdmin_Name_Detail">Dewiswch enw cryno ond disgrifiadol</resource>
+  <resource name="MediaGalleryPostAdmin_Desc">Disgrifiad</resource>
+  <resource name="MediaGalleryPostAdmin_Desc_Detail">Disgrifiad llawn o’r ffeil</resource>
+  <resource name="MediaGalleryPostAdmin_FileOrUrl">Ffeil/URL</resource>
+  <resource name="MediaGalleryPostAdmin_FileOrUrl_Upload">Nodwch ffeil/URL</resource>
+  <resource name="MediaGalleryPostAdmin_MissingName">* Rhowch enw i&apos;r ffeil hon</resource>
+  <resource name="MediaGalleryPostAdmin_MissingFile">* Llwythwch ffeil i fyny neu greu dolen iddi</resource>
+  <resource name="MediaGalleryPostAdmin_StorageQuotaExceeded">Mae cyfanswm maint y ffeiliau yn yr oriel gyfryngau hon yn fwy na chwota’r oriel. Does dim modd cadw&apos;r ffeil.</resource>
+  <resource name="MediaGalleryPostAdmin_FileCountQuotaExceeded">Mae cyfanswm y ffeiliau yn yr oriel gyfryngau hon yn fwy na chwota’r oriel. Does dim modd cadw&apos;r ffeil.</resource>
+  <resource name="MediaGalleryPostAdmin_RestrictedFileType">Dydy&apos;r oriel gyfryngau ddim yn caniatáu&apos;r math hwnnw o ffeil.</resource>
+  <resource name="MediaGalleryPostAdmin_NoFileUploaded">Dewiswch y ffeil neu&apos;r URL yr hoffech ei lwytho i fyny.</resource>
+  <resource name="MediaGalleryPostAdmin_PreviewLoading">Wrthi’n llwytho...</resource>
+  <resource name="MediaGalleryPostAdmin_PreviewError">Gwall wrth lwytho rhagolwg o&apos;r ffeil hon.</resource>
+  <resource name="MediaGalleryPostAdmin_SaveError">Gwall wrth gadw’r ffeil hon.</resource>
+
+  <!-- End of control fields -->
+
+  <resource name="MediaGalleries_UploadFile">Llwytho ffeil i fyny</resource>
+  <resource name="MediaGalleries_Button_Edit">Golygu</resource>
+  <resource name="MediaGalleries_Button_Delete">Dileu</resource>
+  <resource name="MediaGalleries_Button_Upload">Llwytho i fyny</resource>
+  <resource name="MediaGalleries_Button_Download">Llwytho i lawr</resource>
+  <resource name="MediaGalleries_Comment_Pending">Diolch am rannu&apos;ch sylw! Os na fydd eich sylw yn ymddangos yn syth, byddwch yn amyneddgar - gall gymryd ychydig o funudau i&apos;w gyhoeddi neu mae&apos;n bosib bod angen ei safoni.</resource>
+  <resource name="CommentListing_Body">Sylw</resource>
+  <resource name="CommentListing_Name">Enw</resource>
+  <resource name="CommentListing_Website">Gwefan</resource>
+  <resource name="Edit">Golygu</resource>
+  <resource name="Save">Cadw</resource>
+  <resource name="Cancel">Canslo</resource>
+  <resource name="Delete">Dileu</resource>
+  <resource name="Create">Creu</resource>
+  <resource name="Page">Tudalen</resource>
+  <resource name="Add">Ychwanegu</resource>
+  <resource name="Name">Enw</resource>
+  <resource name="NoRecords">Does dim ffeiliau wedi&apos;u llwytho i fyny i&apos;r oriel hon.</resource>
+  <resource name="Moderation">Safoni</resource>
+  <resource name="BreadCrumb_Seperator"> » </resource>
+  <resource name="Navigation_JumpDropDownList_Indent1">|- </resource>
+  <resource name="Navigation_JumpDropDownList_Indent2">|-- </resource>
+  <resource name="PostRating_Zero">Ofnadwy</resource>
+  <resource name="PostRating_One">Gwael</resource>
+  <resource name="PostRating_Two">Gweddol</resource>
+  <resource name="PostRating_Three">Lled dda</resource>
+  <resource name="PostRating_Four">Da</resource>
+  <resource name="PostRating_Five">Ardderchog</resource>
+  <resource name="None">Dim</resource>
+  <resource name="Admin_Title">Esblygiad Telligent :: Gweinyddu</resource>
+  <resource name="Actions">Camau gweithredu</resource>
+  <resource name="Accept">Rwy&apos;n derbyn</resource>
+  <resource name="Decline">Rwy&apos;n gwrthod</resource>
+  <resource name="MediaGalleries_Disclaimer_Title">Cytundeb Llwytho i lawr</resource>
+  <resource name="MediaGalleries_Disclaimer_Detail"><![CDATA[
+ Mae amodau defnyddio penodol ar gyfer y meddalwedd dan sylw. Mae'r wybodaeth ganlynol yn berthnasol i sut rydych chi'n defnyddio'r meddalwedd sydd ar gael i chi drwy gyfrwng y wefan hon.
+  <p />
+  <div style="overflow: auto; width: 80%; height: 300px; border-style: solid; border-color: #cccccc; border-width: 1px; margin: 16px; margin-left: auto; margin-right: auto; padding: 8px;">
+ diweddarwyd ddiwethaf: 17 Tachwedd, 2004
+  <p />
+Mae'r drwydded hon yn rheoli sut defnyddir y meddalwedd cysylltiedig (“Meddalwedd”), a rhaid i chi dderbyn y drwydded hon er mwyn defnyddio'r Meddalwedd.
+  <p />
+ Yn amodol ar y cyfyngiadau isod, cewch ddefnyddio'r Meddalwedd at unrhyw ddiben masnachol neu anfasnachol.
+  <p />
+ Yn gyfnewid am hynny, gofynnwn i chi gytuno i'r canlynol:
+  <ol>
+  <li>Peidio â symud unrhyw hawlfraint neu hysbysiadau eraill o'r Meddalwedd.</li>
+  <li>Na chaniateir i chi gyfuno na dosbarthu'r Meddalwedd gyda meddalwedd eraill sydd wedi'i drwyddedu o dan delerau sy'n ceisio ei gwneud yn ofynnol bod y Meddalwedd (neu unrhyw eiddo deallusol ynddo) yn cael ei ddarparu ar ffurf cod ffynhonnell, sydd wedi'i drwyddedu i eraill er mwyn iddynt allu creu neu ddosbarthu gweithiau sy'n deillio ohono, neu ddosbarthu heb godi tâl.</li>
+  <li>Chewch chi ddim dosbarthu'r Meddalwedd ar ffurf cod ffynhonnell, ac os byddwch yn dosbarthu'r Meddalwedd ar ffurf gwrthrych, dim ond dan drwydded sy'n cydymffurfio â'r drwydded hon y cewch wneud hynny.</li>
+  <li>Ac eithrio (1)
+  <ol type="a">
+  <li>ni fyddwch yn defnyddio enw, logo na nodau masnach Telligent mewn cysylltiad â defnyddio'r Meddalwedd mewn unrhyw fodd oni chewch ganiatâd ysgrifenedig i wneud fel arall;</li>
+  <li>byddwch yn dangos eich hysbysiad hawlfraint dilys eich hun, ac mae'n rhaid i hwnnw fod yn ddigonol i ddiogelu hawlfraint Telligent yn y Meddalwedd; a</li>
+  <li>byddwch yn digolledu Telligent, yn ei ddiogelu ac yn ei amddiffyn rhag ac yn erbyn unrhyw hawliadau neu achosion cyfreithiol, gan gynnwys ffioedd twrneiod, sy'n codi neu sy'n deillio o ddefnyddio neu ddosbarthu'ch addasiadau i'r Meddalwedd ac unrhyw feddalwedd ychwanegol y byddwch yn ei ddosbarthu gyda'r Meddalwedd.</li>
+  </ol>
+  </li>
+  <li>Bydd y Meddalwedd yn dod "fel y mae", heb ddim gwarantau. Dim o gwbl. Mae hyn yn golygu dim gwarant bendant, gwarant ymhlyg na gwarant statudol, gan gynnwys heb gyfyngiad, gwarantau sy’n berthnasol i fasnacheiddrwydd neu addasrwydd at ddiben penodol neu unrhyw warant teitl neu beidio â thorri amodau. Hefyd, rhaid i chi anfon yr ymwadiad hwn ymlaen pan fyddwch yn dosbarthu'r Meddalwedd neu weithiau sy'n deillio ohono.</li>
+  <li>Ni fydd Telligent na'i gyflenwyr yn atebol am unrhyw o'r mathau hynny o ddifrod a elwir yn ddifrod anuniongyrchol, arbennig, canlyniadol, neu ddamweiniol sy'n berthnasol i'r Meddalwedd neu i'r drwydded hon, hyd at y graddau mwyaf a ganiateir gan y gyfraith, ni waeth pa ddamcaniaeth gyfreithiol y seilir hyn arni. Hefyd, rhaid i chi anfon y cyfyngiad hwn ar atebolrwydd ymlaen pa bryd bynnag y byddwch yn dosbarthu'r Meddalwedd neu weithiau sy'n deillio ohono.</li>
+  <li>Os byddwch yn dwyn achos yn erbyn rhywun dros batentau y credwch eu bod yn berthnasol i'r Meddalwedd ar gyfer defnydd unigolyn o'r Meddalwedd, bydd eich trwydded i'r Meddalwedd yn dod i ben yn awtomatig.</li>
+  <li>Bydd unrhyw hawliau patent, os oes rhai, a roddir yn y drwydded hon yn berthnasol i'r Meddalwedd yn unig, nid i unrhyw weithiau a wnewch sy'n deillio ohono.</li>
+  <li>Mae'r Meddalwedd yn amodol ar awdurdodaeth allforio'r Unol Daleithiau ar yr adeg y caiff ei drwyddedu i chi, ac mae'n bosibl y bydd yn gorfod dilyn cyfreithiau allforio neu fewnforio ychwanegol mewn lleoedd eraill. Byddwch yn cytuno i gydymffurfio â phob cyfraith a rheoliad o'r math a allai fod yn berthnasol i'r Meddalwedd ar ôl i chi gael y meddalwedd.</li>
+  <li>Os ydych chi'n asiant i Lywodraeth yr Unol Daleithiau, (i) bydd y Meddalwedd a ddarperir ar ôl gwneud cais amdano ar 1 Rhagfyr 1995 neu ar ôl hynny, yn cael ei ddarparu gyda'r hawliau trwydded masnachol a bennwyd yn y drwydded hon, a (ii) bydd y Meddalwedd a ddarperir ar ôl gwneud cais amdano cyn 1 Rhagfyr 1995, yn cael ei ddarparu gyda “Hawliau Cyfyngedig” fel y pennwyd yn FAR, 48 C.F.R. 52.227-14 (Mehefin 1987) neu DFAR, 48 C.F.R. 252.227-7013 (Hyd 1988), fel sy’n berthnasol.</li>
+  <li>Bydd eich hawliau o dan y drwydded hon yn dod i ben yn awtomatig os byddwch yn ei thorri mewn unrhyw ffordd.</li>
+  <li>Bydd y drwydded hon ond yn cynnwys yr hawliau sy’n gysylltiedig â’r Meddalwedd ac mae Telligent yn cadw pob hawl na roddwyd i chi yn benodol yn y drwydded hon</li>
+  </ol>
+  </div>
+
+ ]]></resource>
+  <resource name="MediaGalleries_Title_UploadFile">Llwytho ffeil i fyny</resource>
+
+  <!-- media gallery view types -->
+
+  <resource name="MediaGalleryViewType_List">Gweld rhestr</resource>
+  <resource name="MediaGalleryViewType_Thumbnail">Gweld mân-luniau</resource>
+  <resource name="MediaGalleryViewType_Thumbnail_Link">&lt;span&gt;&lt;/span&gt;Gweld mân-luniau</resource>
+  <resource name="MediaGalleryViewType_List_Link">&lt;span&gt;&lt;/span&gt;Gweld rhestr</resource>
+
+  <!-- End media gallery view types -->
+
+  <!-- media file list -->
+
+  <resource name="MediaGalleries_FileList_Type">Math</resource>
+  <resource name="MediaGalleries_FileList_Title">Teitl</resource>
+  <resource name="MediaGalleries_FileList_Date">Dyddiad</resource>
+  <resource name="MediaGalleries_FileList_Downloads">Wedi&apos;u llwytho i lawr</resource>
+  <resource name="MediaGalleries_FileList_Rating">Sgôr</resource>
+
+  <!-- End media file list -->
+
+</root>

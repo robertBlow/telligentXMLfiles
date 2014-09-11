@@ -1,0 +1,31 @@
+<emailTemplates>
+	<emailTemplate name="forum_threadmoved_notracking">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName: $core_v2_forumThread.Current.Subject wedi symud 
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+<div style="font-family: arial; font-size: 10pt;">
+	<p>
+		Symudwyd yr edefyn: "$core_v2_forumThread.Current.Subject" ac ni fyddwch yn cael hysbysiadau ar gyfer yr edefyn hwn mwyach.
+	</p>
+	<div style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+		I ddad-danysgrifio rhag cael pob hysbysiad gan $core_v2_configuration.SiteName, llywiwch i "Gosodiadau", cliciwch ar y tab "E-bost", yna o dan yr adran "Ffurfweddu e-bost", newidiwch y gosodiadau Anfon hysbysiadau i "Na".
+	</div>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+Symudwyd $email_utility.RenderText($core_v2_forumThread.Current.Subject) ac ni fyddwch yn cael hysbysiadau ar gyfer yr edefyn hwn mwyach.
+
+------------------------------------------------------------------
+Anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost ar gyfer yr edefyn hwn.
+
+I ddad-danysgrifio rhag cael pob hysbysiad e-bost gan $core_v2_configuration.SiteName, llywiwch i "Gosodiadau", cliciwch ar y tab "E-bost", yna o dan yr adran "Ffurfweddu e-bost", newidiwch y gosodiadau Anfon hysbysiadau i "Na".
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

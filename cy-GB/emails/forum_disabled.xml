@@ -1,0 +1,33 @@
+<emailTemplates>
+	<emailTemplate name="forum_disabled">
+		<subject>
+			<![CDATA[
+Neges heb ei phostio - Holi ac Ateb wedi'i analluogi
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($message = $email_emailMessage.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	Doedd dim modd anfon y neges isod at $core_v2_forum.Current.Name na'i dosbarthu i aelodau'r grŵp gan fod perchennog y grŵp wedi analluogi'r Holi ac Ateb. Cysylltwch â pherchennog y grŵp neu â rheolwr cymuned.<br/><br/>
+	<div style="margin: 15px">
+		<b>Pwnc: $email_utility.RenderHtml($message.Subject)</b><br/>
+		Corff: $email_utility.RenderHtml($message.Body)
+	</div>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($message = $email_emailMessage.Current)
+
+Doedd dim modd anfon y neges isod at $core_v2_forum.Current.Name na'i dosbarthu i aelodau'r grŵp gan fod perchennog y grŵp wedi analluogi'r Holi ac Ateb. Cysylltwch â pherchennog y grŵp neu â rheolwr cymuned.
+
+Pwnc: $email_utility.RenderText($message.Subject)
+
+Corff: $email_utility.RenderText($message.Body)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

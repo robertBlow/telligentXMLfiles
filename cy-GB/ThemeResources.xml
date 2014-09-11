@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <!-- header titles -->
+  <resource name="Body">Corff</resource>
+  <resource name="Header">Pennyn</resource>
+  <resource name="Footer">Troedyn</resource>
+
+  <!-- START General Resources -->
+
+  <resource name="Width">Lled</resource>
+  <resource name="Links">Dolenni</resource>
+  <resource name="Title">Teitl</resource>
+  <resource name="PageTitle">Teitl y dudalen</resource>
+  <resource name="Layout">Cynllun</resource>
+  <resource name="ForumPost">Post fforwm</resource>
+
+  <!-- START site Resources -->
+  <resource name="SiteTitle">Teitl y safle</resource>
+
+</root>

@@ -1,0 +1,46 @@
+<emailTemplates>
+	<emailTemplate name="forum_threadmovenotification">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName: $core_v2_forum.Current.Name: $core_v2_forumThread.Current.Subject
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($thread = $core_v2_forumThread.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	Symudwyd yr edefyn canlynol:<br/><br/>
+	<b>Pwnc</b>: $thread.Subject<br/>
+	<b>Symudwyd i</b>: $core_v2_forum.Current.Name<br/><br/>
+	<div style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+		Anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost ar gyfer yr edefyn hwn neu'r Holi ac Ateb hwn. 
+		<a href="$core_v2_forumUrls.Thread($thread.Id)">Gallwch weld yr edefyn hwn ar-lein</a>.
+    <p>
+		I ddad-danysgrifio yng nghyd-destun yr edefyn hwn yn unig, <a href="$core_v2_forumUrls.Thread($thread.Id)">analluogwch hysbysiadau e-bost ar-lein</a>. I analluogi pob hysbysiad e-bost gan $core_v2_configuration.SiteName, llywiwch i "Gosodiadau", cliciwch ar y tab "E-bost", yna o dan yr adran "Ffurfweddu e-bost", newidiwch y gosodiadau "Anfon hysbysiadau" i "Na".
+    </p>
+  </div>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($thread = $core_v2_forumThread.Current)
+
+Symudwyd yr edefyn canlynol:
+
+Pwnc: $email_utility.RenderText($thread.Subject)
+Symudwyd i: $email_utility.RenderText($core_v2_forum.Current.Name)
+Nifer yr ymatebion: $thread.ReplyCount
+Dolen: $core_v2_forumUrls.Thread($thread.Id)
+
+--
+Anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost ar gyfer yr edefyn hwn neu'r Holi ac Ateb hwn.
+
+I ddad-danysgrifio yng nghyd-destun:
+- ...yr edefyn hwn yn unig, analluogwch hysbysiadau yn $core_v2_forumUrls.Thread($thread.Id).
+- ...pob hysbysiad e-bost gan $core_v2_configuration.SiteName, llywiwch i "Gosodiadau", cliciwch ar y tab "E-bost", yna o dan yr adran "Ffurfweddu e-bost", newidiwch y gosodiadau Anfon hysbysiadau i "Na".
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

@@ -1,0 +1,59 @@
+<emailTemplates>
+	<emailTemplate name="newuser_accountcreated">
+		<subject>
+			<![CDATA[
+Croeso i $core_v2_configuration.SiteName
+			]]>
+		</subject>
+<htmlBody>
+			<![CDATA[
+#set($user = $core_v2_user.Current)
+#set($falseValue = false)
+#set($trueValue = true)
+
+	<div style="font-family: arial; font-size: 10pt;">
+		<p>
+			Croeso i $core_v2_configuration.SiteName,
+		</p>
+		<p>
+			Mewngofnodwch fel <a href='$core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")'>$user.Username</a> i gwrdd ag aelodau eraill y gymuned ac i ddechrau cymryd rhan.
+		</p>
+		
+		<p> Dyma ddolenni defnyddiol:
+			<ul>
+				<li> 
+					<a href="$core_v2_urls.Settings("%{Clean='true'}")">Eich proffil</a>
+				</li>
+				<li> 
+					<a href="$core_v2_urls.HelpAndSupport("%{Clean='true'}")">Help a chymorth</a>
+				</li>
+				<li> 
+					<a href="http://www.biglotteryfund.org.uk/funding/search-past-grants">Chwilio hen grantiau</a>, lle gallwch edrych drwy dudalennau a chreu tudalennau ar gyfer prosiectau a ariennir 
+				</li>
+			</ul>
+		</p>
+		<p>
+			Hwyl ar y cysylltu! <br /><br />
+		</p>
+	</div>
+			]]>
+</htmlBody>
+		<textBody>
+			<![CDATA[
+			#set($user = $core_v2_user.Current)
+			#set($falseValue = false)
+
+			Croeso i $core_v2_configuration.SiteName,
+
+			Mewngofnodwch fel $user.Username yn $core_v2_urls.Login("%{ReturnToCurrentUrl=$falseValue}")' i gwrdd ag aelodau eraill y gymuned ac i ddechrau cymryd rhan.
+			
+			Dyma ddolenni defnyddiol:
+			Eich proffil $core_v2_urls.Settings("%{Clean='true'}")
+			Help a chymorth $core_v2_urls.HelpAndSupport("%{Clean='true'}")
+			Chwilio hen grantiau, lle gallwch edrych drwy dudalennau a chreu tudalennau ar gyfer prosiectau a ariennir http://www.biglotteryfund.org.uk/funding/search-past-grants
+
+			Hwyl ar y cysylltu!
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

@@ -1,0 +1,40 @@
+<emailTemplates>
+	<emailTemplate name="blog_moderation">
+		<subject>
+			<![CDATA[
+$core_v2_blog.Current.Name: comments awaiting your moderation
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<p>
+		You have comments and/or trackbacks awaiting moderation for $blog.Name.
+	</p>
+	<div style="color: #7F7F7F; font-size: 8pt;">
+		<p>
+			You were sent this email because you are an owner of $blog.Name and the number of feedback items awaiting moderation has exceeded the notification threshold. Moderate these posts <a href="$core_v2_blogUrls.AdminFeedback($blog.Id)">here</a>.
+		</p>
+	</div>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+			
+You have comments and/or trackbacks awaiting moderation for $blog.Name at $core_v2_blogUrls.AdminFeedback($blog.Id).
+
+--
+You were sent this email because you are an owner of $blog.Name and the number of feedback items awaiting moderation has exceeded the notification threshold.
+
+To change the number of comments it takes to receive this moderation alert email:
+1. login into control panel and select your blog.
+2. Go to Configure > blog Setup > email tab.
+3. change the moderation notifications setting to a number of comments that meets your desired threshold.
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

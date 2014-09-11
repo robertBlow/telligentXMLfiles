@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<emailTemplates>
+  <emailTemplate name="abuse_notify_author_of_appeal_expiration">
+    <subject>
+      <![CDATA[
+Cyfle olaf i apelio yn erbyn y ffaith bod eich cynnwys wedi cael ei symud oddi ar $core_v2_configuration.SiteName
+			]]>
+    </subject>
+    <htmlBody>
+      <![CDATA[
+#set($post = $core_v2_content.Current)
+#set($appeal = $core_v2_abuseAppeal.Current)
+#set($appealUrl = $core_v2_urls.AbuseAppeal($appeal.AppealId))
+#set($author = $core_v2_user.Get("%{Id=$post.CreatedByUserId}"))
+ 
+<div style="font-family: arial; font-size: 10pt;">
+<p>
+Annwyl  $author.DisplayName:<br />
+
+Ychydig ddyddiau'n ôl, anfonwyd e-bost atoch am eich post, $post.HtmlName("email"), yn $post.Application.Container.HtmlName('email'). 
+Roedd defnyddwyr eraill wedi nodi bod y post yn amhriodol ac nid yw'n ymddangos ar y safle mwyach. Ar ôl $core_v2_abuseAppeal.Current.AppealExpires.ToLongDateString() byddwn yn dileu'r cynnwys hwn am byth. Rhowch wybod os cafodd hyn ei wneud ar gam drwy anfon neges atom gan ddefnyddio'r <a href="$appealUrl">ffurflen hon<a> cyn i’ch cynnwys gael ei symud ar ôl i'r apêl ddod i ben ar $core_v2_abuseAppeal.Current.AppealExpires.ToLongDateString().
+</p>
+</div>
+			]]>
+    </htmlBody>
+    <textBody>
+      <![CDATA[
+#set($post = $core_v2_content.Current)
+#set($appeal = $core_v2_abuseAppeal.Current)
+#set($appealUrl = $core_v2_urls.AbuseAppeal($appeal.AppealId))
+#set($author = $core_v2_user.Get("%{Id=$post.CreatedByUserId}"))
+
+Annwyl $author.DisplayName: 
+ 
+Ychydig ddyddiau'n ôl, anfonwyd e-bost atoch am eich post, $post.HtmlName("email"), yn $post.Application.Container.HtmlName('email'). 
+Roedd defnyddwyr eraill wedi nodi bod y post yn amhriodol ac nid yw'n ymddangos ar y safle mwyach. Ar ôl $core_v2_abuseAppeal.Current.AppealExpires.ToLongDateString() byddwn yn dileu'r cynnwys hwn am byth. Rhowch wybod os cafodd hyn ei wneud ar gam drwy anfon neges atom gan ddefnyddio'r ffurflen hon ($appealUrl) cyn i'ch cynnwys gael ei symud ar ôl i'r apêl ddod i ben ar $core_v2_abuseAppeal.Current.AppealExpires.ToLongDateString().
+			]]>
+    </textBody>
+  </emailTemplate>
+</emailTemplates>

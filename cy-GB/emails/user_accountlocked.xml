@@ -1,0 +1,27 @@
+<emailTemplates>
+	<emailTemplate name="user_accountlocked">
+		<subject>
+			<![CDATA[
+Cyfrif wedi’i gloi: $core_v2_configuration.SiteName
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($unlockTime = $email_utility.ParseInt($email_data.Current.Get("UnlockTime")))
+
+<div style="font-family: arial; font-size: 10pt;">
+  <p>
+    Mae'ch cyfrif wedi cael ei gloi ar <a href="$core_v2_urls.Home()">$core_v2_configuration.SiteName</a> oherwydd sawl ymgais aflwyddiannus i fewngofnodi. #if($core_v2_configuration.UnlockTime >= 0) Caiff ei ddatgloi ar ôl cyfnod byr. #else cysylltwch â rheolwr cymuned i'w ddatgloi. #end Os na wnaethoch geisio mewngofnodi, cysylltwch â rheolwr cymuned.
+  </p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($unlockTime = $email_utility.ParseInt($email_data.Current.Get("UnlockTime")))
+
+Mae'ch cyfrif wedi'i gloi ar $core_v2_configuration.SiteName ($core_v2_urls.Home()) oherwydd sawl ymgais aflwyddiannus i fewngofnodi.  #if($core_v2_configuration.UnlockTime >= 0) Caiff ei ddatgloi ar ôl cyfnod byr. #else cysylltwch â rheolwr cymuned i'w ddatgloi. #end Os na wnaethoch geisio mewngofnodi, cysylltwch â rheolwr cymuned.
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

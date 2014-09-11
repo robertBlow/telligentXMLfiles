@@ -1,0 +1,35 @@
+<emailTemplates>
+	<emailTemplate name="group_accessaccepted">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName: Wedi cymeradwyo aelodaeth $email_utility.SiteTerm("group_propercase"): $core_v2_group.Current.Name
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($group = $core_v2_group.Current)
+<div style="font-family: arial; font-size: 10pt;">
+	Mae eich cais am fynediad wedi cael ei gymeradwyo:<br/>
+	<b>$email_utility.SiteTerm("group_propercase")</b>: $email_utility.RenderHtml($group.Name)<br/>
+	<b>Cyfanswm yr aelodau</b>: $group.TotalMembers<br/>
+	<p>
+		Mae $email_utility.SiteTerm("groups_propercase") yn is-gymunedau bach sy'n rhan o'ch cymuned fawr i hwyluso cydweithrediad drwy flogiau, fforymau, ffeiliau, a wicis. <a href="$core_v2_groupUrls.Group($group.Id)">Ymunwch yn y drafodaeth</a>!
+	</p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($group = $core_v2_group.Current)
+
+Mae'ch cais i fod yn aelod wedi'i gymeradwyo:
+
+$email_utility.SiteTerm("group_propercase"): $group.Name
+Cyfanswm yr aelodau: $group.TotalMembers
+Dolen: $core_v2_groupUrls.Group($group.Id)
+
+Mae $email_utility.SiteTerm("groups_propercase") yn is-gymunedau bach sy'n rhan o'ch cymuned fawr i hwyluso cydweithrediad drwy flogiau, fforymau, ffeiliau, a wicis. Ymunwch yn y drafodaeth!
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

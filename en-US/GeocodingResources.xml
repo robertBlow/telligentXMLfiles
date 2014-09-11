@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <resource name ="geocoding_Address">Address</resource>
+  <resource name ="geocoding_Loading">Loading Map...</resource>
+
+  <resource name ="geocoding_MapWidgetName">Geocoding - geocoded map(BETA)</resource>
+  <resource name ="geocoding_MapWidgetDescription">Displays a map for a specific address, for BETA testing only</resource>
+  <resource name ="geocoding_MapWidgetTitle">Map</resource>
+  <resource name ="geocoding_MapWidget_Height">Map height</resource>
+  <resource name ="geocoding_MapWidget_Width">Map width</resource>
+  <resource name ="geocoding_MapWidget_Zoom">Map zoom</resource>
+  
+</root>

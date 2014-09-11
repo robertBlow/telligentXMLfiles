@@ -1,0 +1,37 @@
+<emailTemplates>
+	<emailTemplate name="contactrequest">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName - cais am gyswllt: $core_v2_contactRequest.Current.Subject
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<b>Subject</b>: $contactRequest.Subject
+</div>
+<div style="margin: 15px; width: 95%; font-family: arial; font-size: 10pt; background-color: #F7F7F7; border-width: 5px; border-color: #F7F7F7; border-style: solid;">
+	$email_utility.RenderHtml($contactRequest.Body)
+</div>
+<div style="color: #7F7F7F; font-family: arial; font-size: 8pt;">
+	<p>
+		Anfonwyd y cais hwn am gyswllt o <a href="$core_v2_urls.Home()">$core_v2_configuration.SiteName</a> gan $contactRequest.Name heb rannu'ch cyfeiriad e-bost.
+	</p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($contactRequest = $core_v2_contactRequest.Current)
+
+Pwnc: $email_utility.RenderText($contactRequest.Subject)
+
+$email_utility.RenderText($contactRequest.Body)
+--
+Anfonwyd y cais hwn am gyswllt o $core_v2_configuration.SiteName gan $contactRequest.Name heb rannu'ch cyfeiriad e-bost.
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

@@ -1,0 +1,44 @@
+<emailTemplates>
+	<emailTemplate name="media_file">
+		<subject>
+			<![CDATA[
+Ffeil [$core_v2_gallery.Current.Name]: $core_v2_media.Current.Title
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($media = $core_v2_media.Current)
+#set($gallery = $core_v2_gallery.Current)
+
+<div style="font-family: arial; font-size: 12pt;">
+	<p>
+		Mae $media.Author.DisplayName wedi postio <a href="$core_v2_mediaUrls.Media($media.Id)">$media.Title</a> yn $gallery.Name:
+	</p>
+	<div style="margin: 15px; width: 95%;">$email_utility.RenderHtml($media.Body())</div>
+	<p>Statws presennol: #if(!$media.IsApproved)Not#end published</p>
+	<div style="color: #7F7F7F; font-size: 8pt;">
+		Anfonwyd y neges e-bost hon atoch gan mai chi yw perchennog $gallery.Name ac mae'r oriel yn rhoi gwybod i berchnogion am bost newydd.
+	</div>
+</div>
+<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+    <a href="$core_v2_urls.ReportAbuse($core_v2_mediaUrls.Media($media.Id), $media.ContentId, $media.ContentTypeId)">Nodi bod</a> y ffeil hon yn sbam/cynnwys difrïol.
+</p>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($media = $core_v2_media.Current)
+#set($gallery = $core_v2_gallery.Current)
+
+Mae $media.Author.DisplayName wedi postio $media.Title yn $gallery.Name ar $core_v2_mediaUrls.Media($media.Id):
+
+$email_utility.RenderText($media.Body())
+
+Statws presennol: #if(!$media.IsApproved)Not#end published
+
+--
+Anfonwyd y neges e-bost hon atoch gan mai chi yw perchennog $gallery.Name ac mae'r oriel yn rhoi gwybod i berchnogion am bost newydd.
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

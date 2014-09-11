@@ -1,0 +1,35 @@
+<emailTemplates>
+	<emailTemplate name="messages_conversation">
+		<subject>
+			<![CDATA[
+#set($message = $core_v2_conversationMessage.Current)
+Mae $message.Author.DisplayName wedi anfon neges atoch chi: $message.Subject
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($message = $core_v2_broadcastMessage.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<b>Oddi wrth:</b> $message.Author.DisplayName<br/>
+	<b>Pwnc:</b> $message.Subject
+	<div>$email_utility.RenderHtml($message)</div>
+	<div style="font-size: 8pt; color: #7F7F7F;">
+		<a href="$core_v2_urls.Conversation($message.ConversationId)">Ateb y neges ar-lein</a>.
+	</div>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($message = $core_v2_conversationMessage.Current)
+Oddi wrth: $message.Author.DisplayName
+Pwnc: $email_utility.RenderText($message.Subject)
+Neges:
+$email_utility.RenderText($message)
+
+Ateb yn $core_v2_urls.Conversation($message.ConversationId).
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

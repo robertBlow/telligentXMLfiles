@@ -1,0 +1,51 @@
+<emailTemplates>
+	<emailTemplate name="media_comment">
+		<subject>
+			<![CDATA[
+$core_v2_gallery.Current.Name - sylw newydd: $email_utility.RenderText($core_v2_mediaComment.Current.Subject)
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($comment = $core_v2_mediaComment.Current)
+#set($media = $core_v2_media.Current)
+#set($gallery = $core_v2_gallery.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<div style="font-size: 12pt;">
+		<b><a href="$core_v2_mediaUrls.Media($media.Id)">$media.Title</a>: sylw newydd</b>
+	</div>
+	Gan $comment.Author.DisplayName<br/>
+	<br/>
+	<div>
+		$email_utility.RenderHtml($comment.Body)
+	</div>
+	<br/>
+	<div style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+		<a href="$core_v2_mediaUrls.Media($media.Id)">Gweld eitem yr oriel gyfryngau ar-lein</a>.<br />
+		I ddad-danysgrifio yng nghyd-destun yr edefyn hwn yn unig, <a href="$core_v2_mediaUrls.Media($media.Id)">analluogwch hysbysiadau e-bost ar-lein</a>.
+	</div>
+</div>
+<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+    <a href="$core_v2_urls.ReportAbuse($core_v2_mediaUrls.Media($media.Id), $comment.CommentId, $comment.CommentContentTypeId)">Nodi bod</a> y sylw hwn yn sbam/cynnwys difrïol.
+</p>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($comment = $core_v2_mediaComment.Current)
+#set($media = $core_v2_media.Current)
+#set($gallery = $core_v2_gallery.Current)
+
+Awdur Sylwadau:  $comment.Author.DisplayName
+Eitem yr oriel gyfryngau:  $email_utility.RenderHtml($media.Title)
+Dolen:  $core_v2_mediaUrls.Media($media.Id)
+
+$email_utility.RenderText($comment.Body)
+
+--
+Anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost pan fydd rhywun wedi creu sylw ar $gallery.Name. I ddad-danysgrifio, ewch i $core_v2_mediaUrls.Media($media.Id).
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

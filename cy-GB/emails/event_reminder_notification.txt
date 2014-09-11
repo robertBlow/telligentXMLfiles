@@ -1,0 +1,41 @@
+Oddi wrth: $helpers.FormatFromAutomated()
+At: $user.Email
+Pwnc: NODYN ATGOFFA: $calendarEvent.EventTitle
+
+#mimebody("text/plain")
+NODYN ATGOFFA: $calendarEvent.EventTitle
+
+Nodyn i'ch atgoffa am y digwyddiad hwn sydd ar y gweill...
+
+---------------------------------------------------------
+$calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+---------------------------------------------------------
+$calendarEvent.FormattedDescription
+---------------------------------------------------------
+Anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost am ddigwyddiadau.
+#end
+
+#mimebody("text/html")
+<div style="font-family: arial; font-size: 12pt;">
+<h4>NODYN ATGOFFA: $calendarEvent.EventTitle</h4>
+<hr/>
+<p>Nodyn i'ch atgoffa am y digwyddiad hwn sydd ar y gweill...</p>
+  <p>
+  $calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+  </p>
+  <hr/>
+  <div style="margin: 15px; width: 95%;">$calendarEvent.FormattedDescription</div>
+  <p>
+  I weld y digwyddiad hwn ar-lein: <a href="$globals.FullPath($calendarUrls.Event($calendarEvent))">$globals.FullPath($calendarUrls.Event($calendarEvent))</a>
+  </p>
+ 
+ 
+  <div style="color: #7F7F7F; font-size: 8pt;">
+    <hr/>
+    <p>
+      anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost
+      am ddigwyddiadau. Dylech <a href="#">ddad-danysgrifio</a> os nad ydych am gael y diweddariadau mwyach.
+    </p>
+  </div>
+</div>
+#end

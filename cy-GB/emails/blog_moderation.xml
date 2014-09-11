@@ -1,0 +1,40 @@
+<emailTemplates>
+	<emailTemplate name="blog_moderation">
+		<subject>
+			<![CDATA[
+$core_v2_blog.Current.Name: sylwadau sy'n aros i gael eu safoni gennych
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<p>
+		Mae gennych sylwadau a/neu ôl-gyfeiriadau sy'n aros i gael eu safoni ar gyfer $blog.Name.
+	</p>
+	<div style="color: #7F7F7F; font-size: 8pt;">
+		<p>
+			Anfonwyd y neges e-bost hon atoch gan mai chi yw perchennog $blog.Name ac mae nifer yr eitemau adborth sy'n aros i gael eu safoni yn fwy na'r trothwy hysbysu. Safonwch y postiadau hyn<a href="$core_v2_blogUrls.AdminFeedback($blog.Id)">yma</a>.
+		</p>
+	</div>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+			
+Mae gennych sylwadau a/neu ôl-gyfeiriadau sy'n aros i gael eu safoni ar gyfer $blog.Name yn $core_v2_blogUrls.AdminFeedback($blog.Id).
+
+--
+Anfonwyd y neges e-bost hon atoch chi gan mai chi yw perchennog $blog.Name ac mae nifer yr eitemau adborth sy'n aros i gael eu safoni yn fwy na'r trothwy hysbysu.
+
+I newid nifer y sylwadau a dderbynnir cyn anfon y neges e-bost hon am safoni:
+1. mewngofnodwch yn y panel rheoli a dewis eich blog.
+2. Ewch i Ffurfweddu> Gosodiadau blog> tab e-bost.
+3. newidiwch osodiad hysbysiadau safoni i nifer y sylwadau sy'n cyfateb i'r trothwy o'ch dewis.
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

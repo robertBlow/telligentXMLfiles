@@ -1,0 +1,34 @@
+<emailTemplates>
+	<emailTemplate name="blog_confirmsubscription">
+		<subject>
+			<![CDATA[
+$core_v2_blog.Current.Name: cadarnhau tanysgrifiad
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+#set($user = $core_v2_user.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<p>
+		A fyddech cystal â <a href="$core_v2_blogUrls.SubscriptionConfirmation($blog.Id, $core_v2_blog.GetSubscriptionId($user.PrivateEmail, $blog.Id))">chadarnhau'ch tanysgrifiad</a> i $blog.Name.
+	</p>
+	<p>
+		Os na wnaethoch chi ofyn am danysgrifio i hyn neu os byddwch yn penderfynu am ba bynnag reswm nad ydych am gael hysbysiadau e-bost am $blog.Name, anwybyddwch y neges e-bost hon.
+	</p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+#set($user = $core_v2_user.Current)
+
+A fyddech cystal â chadarnhau'ch tanysgrifiad i $core_v2_blogUrls.SubscriptionConfirmation($blog.Id, $core_v2_blog.GetSubscriptionId($user.PrivateEmail, $blog.Id)).
+
+Os na wnaethoch chi ofyn am danysgrifio i hyn neu os byddwch yn penderfynu am ba bynnag reswm nad ydych am gael hysbysiadau e-bost am bost newydd, anwybyddwch y neges e-bost hon.
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

@@ -1,0 +1,45 @@
+<emailTemplates>
+	<emailTemplate name="group_accessrequest">
+		<subject>
+			<![CDATA[
+$core_v2_configuration.SiteName : Cais am fynediad $email_utility.SiteTerm("group_propercase"): $core_v2_group.Current.Name
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($group = $core_v2_group.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<b>Mae $core_v2_user.Current.Username</b> wedi gwneud cais am fynediad i $group.Name<br/><br/>
+#set ($message = false)
+#set ($message = $core_v2_groupMembership.Current.Message)
+#if($message && $message != "")
+	<b>Neges:</b><br/>
+	<div style="font-family: arial; color: #808080; margin: 15px; width: 95%;">
+		$email_utility.RenderHtml($message)
+	</div>
+#end
+	<p>
+		<a href="$core_v2_groupUrls.PendingMemberList($group.Id)">Derbyniwch neu gwrthodwch y cais hwn ar-lein</a>.
+	</p>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($group = $core_v2_group.Current)
+			
+Mae $core_v2_user.Current.Username wedi gwneud cais i gael mynediad i $group.Name
+Dolen: $core_v2_groupUrls.Group($group.Id)
+
+#set ($message = false)
+#set ($message = $core_v2_groupMembership.Current.Message)
+#if($message && $message != "")
+$email_utility.RenderText($core_v2_groupMembership.Current.Message)
+#end
+
+Derbyniwch neu gwrthodwch y cais hwn yn $core_v2_groupUrls.PendingMemberList($group.Id).
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

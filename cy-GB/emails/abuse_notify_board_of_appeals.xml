@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<emailTemplates>
+  <emailTemplate name="abuse_notify_board_of_appeals">
+    <subject>
+      <![CDATA[
+Angen adolygu apêl yn $core_v2_configuration.SiteName
+			]]>
+    </subject>
+    <htmlBody>
+      <![CDATA[
+#set($post = $core_v2_content.Current)
+#set($author = $core_v2_user.Get("%{Id=$post.CreatedByUserId}"))
+#set($appeal = $core_v2_abuseAppeal.Current)
+#set($params = "%{}")
+$params.Add("AbuseAppealId", $appeal.AppealId)
+#if ($appeal.Content && $appeal.Content.Application && $appeal.Content.Application.Container)
+	$params.Add("ContainerId", $appeal.Content.Application.Container.ContainerId)
+#end
+#set($appealUrl = $core_v2_urls.AppealQueue($params, false))
+ 
+<div style="font-family: arial; font-size: 10pt;">
+    <p>Mae'r eitem, <b>$post.HtmlName('')</b>, yn <a href="$post.Application.Container.Url">$post.Application.Container.HtmlName('')</a> wedi cael ei nodi'n gynnwys difrïol ac nid yw'n ymddangos ar y safle mwyach.</p>
+    <p>Mae'r awdur, $author.DisplayName, wedi apelio yn erbyn y penderfyniad:
+        <p style="color: #7F7F7F;">
+		    $appeal.AuthorResponse
+	    </p>
+    </p>
+		#if($post.ContentTypeId == $core_v2_wikiPage.ContentTypeId)
+			Ewch i <a href="$post.Url">$post.HtmlName('')</a> i glirio'r statws cynnwys difrïol a datgloi'r dudalen neu gadarnhau a dileu'r dudalen wici.
+		#else
+			Ewch i'r <a href="$appealUrl">ciw</a> o apeliadau agored i adolygu sylwadau'r awdur a gwneud penderfyniad terfynol.
+		#end
+</div>
+			]]>
+    </htmlBody>
+    <textBody>
+      <![CDATA[
+#set($post = $core_v2_content.Current)
+#set($author = $core_v2_user.Get("%{Id=$post.CreatedByUserId}"))
+#set($appeal = $core_v2_abuseAppeal.Current)
+#set($params = "%{}")
+$params.Add("AbuseAppealId", $appeal.AppealId)
+#if ($appeal.Content && $appeal.Content.Application && $appeal.Content.Application.Container)
+	$params.Add("ContainerId", $appeal.Content.Application.Container.ContainerId)
+#end
+#set($appealUrl = $core_v2_urls.AppealQueue($params, false))
+
+Oddi wrth: Gwasanaeth cynnwys difrïol
+Corff:
+Mae'r eitem, $post.HtmlName(''), yn $post.Application.Container.HtmlName('') wedi cael ei nodi'n gynnwys difrïol ac nid yw'n ymddangos ar y safle mwyach.
+ 
+Mae'r awdur, $author.DisplayName, wedi apelio yn erbyn y penderfyniad:
+ 
+$email_utility.RenderText($appeal.AuthorResponse)
+ 
+#if($post.ContentTypeId == $core_v2_wikiPage.ContentTypeId)
+Ewch i'r dudalen wici i glirio'r statws cynnwys difrïol a datgloi’r dudalen neu gadarnhau a dileu'r dudalen wici: $post.Url
+#else
+Ewch i weld y ciw o apeliadau agored i weld sylwadau'r awdur a gwneud penderfyniad terfynol. $appealUrl
+#end
+			]]>
+    </textBody>
+  </emailTemplate>
+</emailTemplates>

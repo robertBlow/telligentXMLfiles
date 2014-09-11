@@ -1,0 +1,38 @@
+Oddi wrth: $helpers.FormatFromAutomated()
+At: $user.Email
+Pwnc: WEDI'I GANSLO: $calendarEvent.EventTitle
+
+#mimebody("text/plain")
+WEDI'I GANSLO: $calendarEvent.EventTitle
+---------------------------------------------------------
+$calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+---------------------------------------------------------
+
+Mae'r digwyddiad hwn wedi'i ganslo.  I gael rhagor o wybodaeth, ewch i $globals.FullPath($calendarUrls.Event($calendarEvent)) neu cysylltwch â threfnydd y digwyddiad.
+
+---------------------------------------------------------
+Anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost pan mae rhywun yn diweddaru digwyddiad newydd ar y calendr $calendarEvent.Calendar.Name. I ddad-danysgrifio, ewch i:
+#end
+
+#mimebody("text/html")
+<div style="font-family: arial; font-size: 12pt;">
+<h4>WEDI'I GANSLO: $calendarEvent.EventTitle</h4>
+<hr/>
+  <p>
+  $calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+  </p>
+  <hr/>
+  <div style="margin: 15px; width: 95%;">
+  Mae'r digwyddiad hwn <span style="color:#ff0000;font-weight:bold;">WEDI'I GANSLO</span>.  I gael rhagor o wybodaeth ewch i dudalen hafan y digwyddiad <a href="$globals.FullPath($calendarUrls.Event($calendarEvent))"></a> neu cysylltwch â threfnydd y digwyddiad.
+  </div>
+ 
+ 
+  <div style="color: #7F7F7F; font-size: 8pt;">
+    <hr/>
+    <p>
+      anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost
+      pan mae digwyddiad yn cael ei ddiweddaru. Dylech <a href="#">ddad-danysgrifio</a> os nad ydych am gael y diweddariadau mwyach.
+    </p>
+  </div>
+</div>
+#end

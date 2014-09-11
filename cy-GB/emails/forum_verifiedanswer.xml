@@ -1,0 +1,75 @@
+<emailTemplates>
+	<emailTemplate name="forum_verifiedanswer">
+		<subject>
+			<![CDATA[
+$core_v2_forumReply.Current.Subject: ateb wedi'i wirio
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($post = $core_v2_forumReply.Current)
+#set($forum = $core_v2_forum.Get($post.ForumId))
+#set($wikis = $core_v2_wiki.List("%{GroupId=$forum.Group.Id,PageSize=1,PageIndex=0}"))
+
+#set($wiki = false)
+#if($wikis.Count > 0)
+	#set($wiki = $wikis.get_Item(0))
+#end
+
+<style type="text/css">
+	blockquote.quote { border:1px dotted #CCCCCC; padding:5px; }
+	blockquote div.quote-user { font-weight: bold; }
+	blockquote div.quote-content p { margin: 0; font-style: italic; }
+</style>
+<div style="font-family: arial; font-size: 10pt;">
+<div style="font-size:12pt;"><b>Cafodd y post canlynol gan $post.Author.DisplayName ei wirio fel ateb i"<a href="$core_v2_forumUrls.ForumReply($post.Id)">$post.Subject</a>":</b></div><br/><br/>
+	<div>$email_utility.RenderHtml($post)</div><br />
+	<div style="background-color:#DDFFDD; border-width: 5px; border-color: #DDFFDD; border-style: solid;">
+		#if($wiki)
+			Oedd hyn yn ateb eich cwestiwn? <a href="$core_v2_wikiUrls.AddPage($wiki.Id, "%{ForumThreadId=$post.ThreadId}")">Cipio'r </a> holi ac ateb hwn a'i roi mewn wiki.<br/>
+		#end
+		Heb ateb eich cwestiwn? <a href="$core_v2_forumUrls.RejectForumThreadAnswer($post.Id)">Gwrthodwch hwn fel ateb</a>
+	</div>
+</div>
+<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+    <a href="$core_v2_urls.ReportAbuse($core_v2_forumUrls.ForumReply($post.Id), $post.ContentId, $post.GlobalContentTypeId)">Nodi bod</a> yr ateb hwn yn sbam/cynnwys difrïol.
+</p>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($post = $core_v2_forumReply.Current)
+#set($forum = $core_v2_forum.Get($post.ForumId))
+#set($wikis = $core_v2_wiki.List("%{GroupId=$forum.Group.Id,PageSize=1,PageIndex=0}"))
+
+#set($wiki = false)
+#if($wikis.Count > 0)
+	#set($wiki = $wikis.get_Item(0))
+#end
+
+<style type="text/css">
+	blockquote.quote { border:1px dotted #CCCCCC; padding:5px; }
+	blockquote div.quote-user { font-weight: bold; }
+	blockquote div.quote-content p { margin: $post.Author.DisplayName
+Post: $email_utility.RenderText($post.Subject)
+Postiwyd yn: $email_utility.RenderText($core_v2_forum.Current.Name)
+Dolen: $core_v2_forumUrls.ForumReply($post.Id)
+
+Ateb a awgrymir:
+$email_utility.RenderText($post)
+
+#if($wiki)
+Oedd hyn yn ateb eich cwestiwn? Cipio'r holi ac ateb hwn a'i roi mewn wiki: $core_v2_wikiUrls.AddPage($wiki.Id, "%{ForumThreadId=$post.ThreadId}")
+#end
+Heb ateb eich cwestiwn? Gwrthodwch hwn fel ateb: $core_v2_forumUrls.RejectForumThreadAnswer($post.Id)
+
+------------------------------------------------------------------
+Anfonwyd y neges e-bost hon atoch chi am eich wedi dewis cael hysbysiadau e-bost pan fydd rhywun wedi ymateb i'r edefyn hwn.
+
+I ddad-danysgrifio yng nghyd-destun:
+- ...yr edefyn hwn yn unig, analluogwch hysbysiadau yn $core_v2_forumUrls.ForumReply($post.Id).
+- ...pob hysbysiad e-bost gan $core_v2_configuration.SiteName, llywiwch i "Gosodiadau", cliciwch ar y tab "E-bost", yna o dan yr adran "Ffurfweddu e-bost", newidiwch y gosodiadau Anfon hysbysiadau i "Na".
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root> <!-- test -->
+    <resource name="Evolution.Unknown">Gwall anhysbys.</resource>
+    <resource name="Evolution.ValidationError">Gwall dilysu.</resource>
+
+    <resource name="Evolution.User.NotFound">Heb ddod o hyd i&apos;r defnyddiwr.</resource>
+    <resource name="Evolution.User.DeletePermissionError">Yr hawl i ddileu defnyddiwr wedi cael ei gwrthod.</resource>
+    <resource name="Evolution.User.InvalidReassignUserName">Mae’r enw defnyddiwr i&apos;w ail-neilltuo i&apos;r defnyddiwr hwn yn annilys.</resource>
+    <resource name="Evolution.User.UnknownDeleteFailure">Gwall anhysbys wrth ddileu&apos;r defnyddiwr.</resource>
+    <resource name="Evolution.User.CannotBeDeleted">Does dim modd dileu&apos;r defnyddiwr hwn.</resource>
+
+    <resource name="Evolution.Friendships.ModifyAccessDenied">Yr hawl i addasu cyfeillgarwch ar gyfer defnyddiwr arall wedi cael ei gwrthod.</resource>
+
+    <resource name="Evolution.Group.ReadAccessDenied">Yr hawl i weld grŵp wedi cael ei gwrthod.</resource>
+    <resource name="Evolution.Group.OverLicense">Mae nifer uchaf y grwpiau eisoes yn bodoli ar gyfer y drwydded a roddwyd.</resource>
+
+    <resource name="Evolution.Search.TypeNotSupported">Dydy&apos;r cyfleuster chwilio ddim yn delio â&apos;r math hwn.</resource>
+
+    <resource name="Evolution.FeaturedContent.Disabled">Mae&apos;r cynnwys sy&apos;n cael sylw wedi&apos;i analluogi.</resource>
+    <resource name="Evolution.FeaturedContent.AccessDenied">Yr hawl i roi sylw i gynnwys wedi cael ei gwrthod.</resource>
+
+    <resource name="Telligent.Forum.NotFound">Heb ddod o hyd i&apos;r fforwm.</resource>
+    <resource name="Telligent.Forum.CreatePostAccessDenied">Does gan y defnyddiwr sy&apos;n cael mynediad ddim hawl i greu edefyn.</resource>
+    <resource name="Telligent.Forum.DuplicateThread">Mae edefyn yn bodoli sy&apos;n copi dyblyg o’r edefyn hwn.</resource>
+    <resource name="Telligent.Forum.DuplicateReply">Mae ateb fforwm Holi ac Ateb yn bodoli sy&apos;n copi dyblyg o’r ateb hwn.</resource>
+
+    <resource name="Telligent.Wiki.IdMissing">Rhaid nodi Id wici wrth chwilio yn ôl allwedd tudalen.</resource>
+    <resource name="Telligent.Wiki.PageNotFound">Heb ddod o hyd i&apos;r dudalen.</resource>
+
+    <resource name="Telligent.Blog.DuplicateBody">Corff dyblyg.</resource>
+    <resource name="Telligent.Blog.DuplicateName">Enw dyblyg.</resource>
+    <resource name="Telligent.Blog.PostNotFound">Heb ddod o hyd i&apos;r post.</resource>
+
+    <resource name="Telligent.MediaGallery.DuplicateMedia">Mae post cyfryngau yn dwyn y teitl hwn eisoes yn bodoli. Dewiswch deitl arall i&apos;r post hwn.</resource>
+
+	<resource name="Telligent.Content.ContentNotFound">Heb ddod o hyd i&apos;r cynnwys.</resource>
+	<resource name="Telligent.Content.ContainerNotFound">Heb ddod o hyd i&apos;r cynhwysydd.</resource>
+	<resource name="Telligent.Content.ApplicationNotFound">Heb ddod o hyd i&apos;r rhaglen.</resource>
+</root>

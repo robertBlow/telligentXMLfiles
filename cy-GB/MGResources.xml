@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <resource name="CP_Settings_Email_EnableMG">Galluogi Porth Post</resource>
+  <resource name="CP_Settings_Email_EnableMG_Descr">Galluogi neu analluogi&apos;r ychwanegyn Porth Post ar gyfer y safle hwn.</resource>
+  <resource name="CP_Settings_Email_MG_RemoteAccessCode">Cod mynediad o bell</resource>
+  <resource name="CP_Settings_Email_MG_RemoteAccessCode_Descr">Y cod diogelwch sydd ei angen er mwyn i Borth Post o Bell gysylltu â&apos;r gweinydd hwn.</resource>
+  <resource name="CP_Settings_Email_MG_EmailDomain">Parth e-bost</resource>
+  <resource name="CP_Settings_Email_MG_EmailDomain_Descr">Dyma&apos;r enw parth a ddefnyddir ym mhob cyfeiriad e-bost. H.y., &quot;mysite.com&quot; os &quot;forum@mysite.com&quot; fyddai&apos;r cyfeiriad e-bost enghreifftiol.</resource>
+  <resource name="CP_Settings_Email_MG_EmailDomain_InvalidDomain">Enw parth annilys.</resource>
+  <resource name="CP_Settings_Email_MG_Accounts">Cyfrifon post i mewn.</resource>
+  <resource name="CP_Settings_Email_MG_Accounts_CreateNew">Ychwanegu blwch post newydd</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountEnabled">Wedi’i Alluogi</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountTypeList">Math o flwch post</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountTypeList_Pop3">POP3</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountTypeList_IMAP">IMAP</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountTypeList_Pop3SSL">POP3 SSL</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountTypeList_IMAPSSL">IMAP SSL</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountPassword">Cyfrinair</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountUserName">Enw defnyddiwr</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountUrl">Enw lletywr</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountUrlValidate">Rhaid i chi roi enw&apos;r gweinydd</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_AccountUserNameValidate">Rhaid i chi roi enw defnyddiwr.</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_Title">Proses gosod blwch post Porth Post </resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_UseApopAuthentication">Defnyddio dilysiad APOP</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_DeleteConfirmation">Ydych chi&apos;n siŵr eich bod am ddileu gosodiadau cyfrif post &lt;strong&gt;[hostname], [username]&lt;/strong&gt;? Does dim modd dadwneud hyn</resource>
+  <resource name="CP_Settings_Email_MG_AccountsForm_DeleteIndexError">Dydy ID Gosodiadau Cyfrif &lt;strong&gt;[accountid]&lt;/strong&gt; ddim yn yr amrediad, adnewyddwch y rhestr a rhoi cynnig arall arni.</resource>
+  <resource name="CP_Settings_Email_MG_Accounts_Account_HostName">Gweinydd</resource>
+  <resource name="CP_Settings_Email_MG_Accounts_Account_UserName">Enw defnyddiwr</resource>
+  <resource name="CP_Settings_Email_MG_Accounts_Account_Enabled">Wedi’i Alluogi</resource>
+  <resource name="CP_Settings_Email_MG_Accounts_Account_Actions">Gweithredoedd</resource>
+	<resource name="CP_Settings_Email_MG_MaxAttachmentBytes">Maint mwyaf atodiadau (mewn beit)</resource>
+	<resource name="CP_Settings_Email_MG_MaxAttachmentBytes_Descr">Caniatáu&apos;r atodiadau hynny sy&apos;n llai na&apos;r beitiau hyn neu&apos;n cyfateb i hynny.</resource>
+
+</root>

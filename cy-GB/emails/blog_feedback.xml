@@ -1,0 +1,54 @@
+<emailTemplates>
+	<emailTemplate name="blog_feedback">
+		<subject>
+			<![CDATA[
+$core_v2_blog.Current.Name: $core_v2_blogPost.Current.Title feedback
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+#set($comment = $core_v2_blogComment.Current)
+#set($parent = $core_v2_blogPost.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<div style="font-size: 12pt;">
+		<b><a href="$core_v2_blogUrls.BlogPost($parent.Id)">$parent.Title</a>: sylw newydd</b>
+	</div>
+	Gan $comment.Author.DisplayName<br/><br/>
+	<p>
+		$email_utility.RenderHtml($comment)
+	</p>
+	<p>
+		Yr adborth oedd #if($comment.IsApproved)$core_v2_language.GetResource("Post_IsApproved")#else$core_v2_language.GetResource("Post_NotApproved")#end
+	</p>
+	<p>
+		<a href="$core_v2_blogUrls.AdminFeedbackAction($blog.Id, "approve", $comment.Id)">Cymeradwyo</a> neu <a href="$core_v2_blogUrls.AdminFeedbackAction($blog.Id, "delete", $comment.Id)">ddileu'r</a> sylw hwn.
+	</p>
+</div>
+<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+    <a href="$core_v2_urls.ReportAbuse($core_v2_blogUrls.BlogPost($parent.Id), $comment.CommentId, $comment.CommentContentTypeId)">Nodi bod</a> y sylw hwn yn sbam/cynnwys difrïol.
+</p>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($blog = $core_v2_blog.Current)
+#set($comment = $core_v2_blogComment.Current)
+#set($parent = $core_v2_blogPost.Current)
+
+Oddi wrth: $comment.Author.DisplayName
+Postiwyd: adborth
+At: $parent.Title in $email_utility.RenderText($blog.Name)
+Dolen: $core_v2_blogUrls.BlogPost($parent.Id)
+
+$email_utility.RenderText($comment)
+
+Yr adborth oedd#if($comment.IsApproved) $core_v2_language.GetResource("Post_IsApproved")#else $core_v2_language.GetResource("Post_NotApproved")#end.
+
+Cymeradwyo: $core_v2_blogUrls.AdminFeedbackAction($blog.Id, "approve", $comment.Id)
+Dileu: $core_v2_blogUrls.AdminFeedbackAction($blog.Id, "delete", $comment.Id)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

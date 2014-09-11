@@ -1,0 +1,35 @@
+Oddi wrth: $helpers.FormatFromAutomated()
+At: $user.Email
+Pwnc: rydych chi wedi cael gwahoddiad i $calendarEvent.EventTitle
+
+#mimebody("text/plain")
+Rydych chi wedi cael gwahoddiad i $calendarEvent.EventTitle
+---------------------------------------------------------
+$calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+---------------------------------------------------------
+$calendarEvent.FormattedDescription
+
+I dderbyn neu wrthod y gwahoddiad hwn, ewch i $globals.FullPath($inviteUrl)
+
+Daw'r gwahoddiad hwn i ben ar $registration.TokenExpireDate.ToString("MMMM dd, yyyy, hh:mm tt").
+
+#end
+
+#mimebody("text/html")
+<div style="font-family: arial; font-size: 12pt;">
+<h4>Rydych chi wedi cael gwahoddiad i $calendarEvent.EventTitle</h4>
+<hr/>
+  <p>
+  $calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+  </p>
+  <hr/>
+  <div style="margin: 15px; width: 95%;">$calendarEvent.FormattedDescription</div>
+  <p>
+ I dderbyn neu wrthod y gwahoddiad hwn, ewch i <a href="$globals.FullPath($inviteUrl)">Here</a>
+  </p>
+ <p>
+ Daw'r gwahoddiad hwn i ben ar $registration.TokenExpireDate.ToString("MMMM dd, yyyy, hh:mm tt").
+ </p>
+ 
+</div>
+#end

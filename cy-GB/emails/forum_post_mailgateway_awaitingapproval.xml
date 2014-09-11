@@ -1,0 +1,42 @@
+<emailTemplates>
+	<emailTemplate name="forum_post_mailgateway_awaitingapproval">
+		<subject>
+			<![CDATA[
+#set($post = $core_v2_forumReply.Current)
+#if(!$post)
+#set($post = $core_v2_forumThread.Current)
+#end
+Mae post $core_v2_forum.Get($post.ForumId).Name yn aros i gael ei gymeradwyo: $post.Subject
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($post = $core_v2_forumReply.Current)
+#if(!$post)
+#set($post = $core_v2_forumThread.Current)
+#end
+
+<div style="font-family: arial; font-size: 10pt;"><p>
+	Mae'ch post yn aros i gael ei gymeradwyo gan safonwr. Ar ôl iddo gael ei gymeradwyo, bydd ar gael i'w weld ar-lein a chaiff ei anfon dros e-bost at danysgrifwyr.<br/><br/>
+	<div style="margin: 15px; background-color: #F7F7F7; border-width: 5px; border-color: #F7F7F7; border-style: solid; color: #000000; width: 95%">
+		<b>Pwnc:</b> $email_utility.RenderHtml($post.Subject)<br/>
+		<b>Postiwyd at:</b> $email_utility.RenderHtml($core_v2_forum.Get($post.ForumId).Name)
+	</div>
+</p></div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($post = $core_v2_forumReply.Current)
+#if(!$post)
+#set($post = $core_v2_forumThread.Current)
+#end
+
+Mae'ch post yn aros i gael ei gymeradwyo gan safonwr. Ar ôl iddo gael ei gymeradwyo, bydd ar gael i'w weld ar-lein a chaiff ei anfon dros e-bost at danysgrifwyr.
+
+Pwnc: $email_utility.RenderText($post.Subject)
+Postiwyd at: $email_utility.RenderText($core_v2_forum.Get($post.ForumId).Name)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

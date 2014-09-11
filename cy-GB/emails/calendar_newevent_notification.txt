@@ -1,0 +1,44 @@
+Oddi wrth: $helpers.FormatFromAutomated()
+At: $user.Email
+Pwnc: NEWYDD! $calendarEvent.EventTitle
+
+#mimebody("text/plain")
+$calendarEvent.EventTitle
+---------------------------------------------------------
+$calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+---------------------------------------------------------
+$calendarEvent.FormattedDescription
+
+I weld #if($canRegister) neu gofrestru ar gyfer #end y digwyddiad hwn ar-lein, ewch i 
+$globals.FullPath($calendarUrls.Event($calendarEvent))
+---------------------------------------------------------
+Anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost pan mae rhywun yn creu digwyddiad newydd ar y calendr $calendarEvent.Calendar.Name. Er mwyn dad-danysgrifio, ewch i $globals.FullPath($calendarUrls.Home($calendarEvent.Calendar)) a dewis 'Dad-danysgrifio i gael e-bost o'r calendr hwn'.
+#end
+
+#mimebody("text/html")
+<div style="font-family: arial; font-size: 12pt;">
+<h4> $calendarEvent.EventTitle</h4>
+<hr/>
+  <p>
+  $calendarEvent.EventDateString #if($calendarEvent.EventLocation && $calendarEvent.EventLocation != '') | $calendarEvent.EventLocation #end
+  </p>
+  <hr/>
+  <div style="margin: 15px; width: 95%;">$calendarEvent.FormattedDescription</div>
+  <p>
+  I weld y digwyddiad hwn ar-lein: <a href="$globals.FullPath($calendarUrls.Event($calendarEvent))">$globals.FullPath($calendarUrls.Event($calendarEvent))</a>
+  </p>
+  #if($canRegister)
+	<p>
+		<a href="$globals.FullPath($calendarUrls.Event($calendarEvent))">Cliciwch yma i gofrestru ar gyfer y digwyddiad hwn</a>
+	<p>
+  #end
+ 
+  <div style="color: #7F7F7F; font-size: 8pt;">
+    <hr/>
+    <p>
+      anfonwyd y neges e-bost hon atoch chi am eich bod wedi dewis cael hysbysiadau e-bost
+      pan mae digwyddiad newydd yn cael ei greu. Dylech <a href="#">ddad-danysgrifio</a> os nad ydych am gael y diweddariadau mwyach.
+    </p>
+  </div>
+</div>
+#end

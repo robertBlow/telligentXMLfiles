@@ -1,0 +1,48 @@
+<emailTemplates>
+	<emailTemplate name="wikis_page_possiblespam">
+		<subject>
+			<![CDATA[
+$core_v2_wikiPage.Current.Title: Wici yn sbam posib
+			]]>
+		</subject>
+		<htmlBody>
+			<![CDATA[
+#set($page = $core_v2_wikiPage.Current)
+
+<div style="font-family: arial; font-size: 10pt;">
+	<p>
+		<strong style="color:#FF0000">Nodwyd bod tudalen wici yn sbam posib gan y rhwystrwr sbam $core_v2_configuration.SiteName.</strong>
+	</p>
+	<div style="font-family: arial; font-size: 10pt;">
+	<div style="font-size: 12pt; font-weight: bold;">
+		$page.Title
+	</div>
+	Golygwyd gan $page.User.DisplayName<br/>
+	<p>
+		$email_utility.RenderHtml($page)
+	</p>
+	<div style="font-family: arial; font-size: 8pt; color=#7F7F7F;">
+		<a href="$core_v2_wikiUrls.Page($page.Id)">Gweld y dudalen hon ar-lein</a>.<br/>
+		<a href="$core_v2_wikiUrls.ManageWikiPages($page.WikiId)">Rheoli wici yma</a>. 
+	</div>
+</div>
+			]]>
+		</htmlBody>
+		<textBody>
+			<![CDATA[
+#set($page = $core_v2_wikiPage.Current)
+
+** Nodwyd bod tudalen wici yn sbam posib gan y rhwystrwr sbam $core_v2_configuration.SiteName. **
+
+Safle: $core_v2_urls.Home()
+Wici: $core_v2_wikiUrls.Wiki($page.WikiId)
+Tudalen: $page.Title at $core_v2_wikiUrls.Page($page.Id)
+Rheoli wici yma: $page.Title at $core_v2_wikiUrls.ManageWikiPages($page.WikiId)
+Postiwyd gan: $page.User.DisplayName
+Postiwyd ar: $page.LastModifiedDate
+
+$email_utility.RenderText($page)
+			]]>
+		</textBody>
+	</emailTemplate>
+</emailTemplates>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resource name ="calendar_ApplicationName">Calendr</resource>
+  <resource name ="calendar_Edit">(Golygu)</resource>
+  <resource name ="calendar_ApplicationSingularName">Calendr</resource>
+
+  <resource name ="calendar_Monday">Dydd Llun</resource>
+  <resource name ="calendar_Tuesday">Dydd Mawrth</resource>
+  <resource name ="calendar_Wednesday">Dydd Mercher</resource>
+  <resource name ="calendar_Thursday">Dydd Iau</resource>
+  <resource name ="calendar_Friday">Dydd Gwener</resource>
+  <resource name ="calendar_Saturday">Dydd Sadwrn</resource>
+  <resource name ="calendar_Sunday">Dydd Sul</resource>
+  <resource name="calendar_EventList_RemoveFilter">Clirio hidlydd...</resource>
+
+  <resource name ="calendar_Url_AddEvent">Ychwanegu digwyddiad</resource>
+  <resource name ="calendar_Url_EditEvent">Golygu digwyddiad</resource>
+  <resource name ="calendar_Url_AddCalendar">Ychwanegu calendr</resource>
+  <resource name ="calendar_Url_EditCalendar">Golygu calendr</resource>
+  <resource name ="calendar_Url_Registration">Cofrestriadau</resource>
+  <resource name ="calendar_Url_AllCalendars">Calendrau</resource>
+
+  <resource name ="calendar_Monday_Mini">Ll</resource>
+  <resource name ="calendar_Tuesday_Mini">Ma</resource>
+  <resource name ="calendar_Wednesday_Mini">Me</resource>
+  <resource name ="calendar_Thursday_Mini">I</resource>
+  <resource name ="calendar_Friday_Mini">G</resource>
+  <resource name ="calendar_Saturday_Mini">Sa</resource>
+  <resource name ="calendar_Sunday_Mini">Su</resource>
+
+  <resource name ="calendar_CalendarWidgetTitle">Calendr-Calendr Digwyddiad </resource>
+  <resource name ="calendar_CalendarViewType">Math o galendr</resource>
+  <resource name ="calendar_CalendarViewTypeFull">Calendr mawr</resource>
+  <resource name ="calendar_CalendarViewTypeMini">Calendr bach</resource>
+  <resource name ="calendar_CalendarLoadingMessage">Wrthi&apos;n llwytho calendr...</resource>
+  <resource name ="calendar_CalendarErrorMessage">Gwall wrth lwytho&apos;r calendr.</resource>
+  <resource name ="calendar_CalendarWidgetDescription">Mae&apos;n cyfleu digwyddiadau calendr digwyddiadau ar ffurf calendr</resource>
+
+  <resource name ="calendar_CalendarNextLinkText">Nesaf &gt;&gt;</resource>
+  <resource name ="calendar_CalendarPreviousLinkText">&lt;&lt; Blaenorol</resource>
+  <resource name ="calendar_CalendarMonthLabelFormat">MMMM bbbb</resource>
+
+  <resource name ="calendar_CalendarNextLinkTextMini">&gt;&gt;</resource>
+  <resource name ="calendar_CalendarPreviousLinkTextMini">&lt;&lt;</resource>
+  <resource name ="calendar_CalendarMonthLabelFormatMini">MMM bb</resource>
+  
+  <resource name ="calendar_EventLinks_MaxMonths">Misoedd i ddangos</resource>
+  <resource name ="calendar_EventLinks_MaxEvents">Digwyddiadau i ddangos</resource>
+  <resource name ="calendar_EventLinks_IsAggregate">Dangos digwyddiadau o bob calendr</resource>
+
+  <resource name="CalendarNameLabel">Enw&apos;r calendr:</resource>
+  <resource name="CalendarDescriptionLabel">Disgrifiad o&apos;r calendr:</resource>
+  <resource name="CalendarUrlLabel">URL allanol y calendr:</resource>
+  <resource name="CalendarCreateButton">Cadw&apos;r calendr</resource>
+  <resource name="EventCreateButton">Cadw&apos;r digwyddiad</resource>
+  <resource name="TokenLabel">Cod Cofrestru:</resource>
+  <resource name="EventTitleLabel">Teitl y digwyddiad:</resource>
+  <resource name="EventUrlLabel">URL y digwyddiad:</resource>
+  <resource name="EventDescriptionLabel">Disgrifiad o’r digwyddiad:</resource>
+  <resource name="EventStartDateLabel">Dyddiad dechrau&apos;r digwyddiad:</resource>
+  <resource name="EventEndDateLabel">Dyddiad gorffen y digwyddiad:</resource>
+  <resource name="EventLocationLabel">Lleoliad y digwyddiad:</resource>
+  <resource name="EventRegistrationTypeLabel">Cofrestriadau:</resource>
+  <resource name="EventMaxRegistrationLabel">Nifer fwyaf y bobl gaiff gofrestru:</resource>
+  <resource name="AllowAnonymousRegistrationLabel">Caniatáu i ddefnyddwyr dienw gofrestru</resource>
+
+  <resource name="EventDateTimeFormatString">MMMM dd, bbbb, aa:mm tt</resource>
+  <resource name="EventDateOnlyFormatString">MMMM dd, bbbb</resource>
+  <resource name="EventTimeOnlyFormatString">aa:mm tt</resource>
+  <resource name="EventDualDateFormatString">{0} i {1}</resource>
+  <resource name="EventSingleDateFormatString">{0}</resource>
+  <resource name="DataEntryDateFormat">MM/dd/bbbb aa:mm tt</resource>
+
+  <resource name="ActivityMessage_CreateCalendar">&lt;a href=&quot;{1}&quot;&gt;{0}&lt;/a&gt; wnaeth greu&apos;r calendr &lt;a href=&quot;{3}&quot;&gt;{2}&lt;/a&gt;.</resource>
+  <resource name="ActivityMessage_EditCalendar">&lt;a href=&quot;{1}&quot;&gt;{0}&lt;/a&gt; wnaeth olygu&apos;r calendr &lt;a href=&quot;{3}&quot;&gt;{2}&lt;/a&gt;.</resource>
+  <resource name="ActivityMessage_AddEvent"><![CDATA[<a href="{1}">{0}</a> wnaeth greu'r digwyddiad <a href="{3}">{2}</a> yng nghalendr <a href="{5}">{4}</a>.]]></resource>
+  <resource name="ActivityMessage_EditEvent"><![CDATA[<a href="{1}">{0}</a> wnaeth olygu'r digwyddiad <a href="{3}">{2}</a> yng nghalendr <a href="{5}">{4}</a>.]]></resource>
+  <resource name="ActivityMessage_CancelEvent"><![CDATA[<span style="color:#ff0000;font-weight:bold">HYSBYSIAD CANSLO:</span> Mae'r digwyddiad<a href="{1}">{0}</a> wedi cael ei <span style="color:#ff0000;font-weight:bold">GANSLO</span>.]]></resource>
+  <resource name="ActivityMessage_AddEventComment"><![CDATA[Mae <a href="{1}">{0}</a> wedi rhoi sylw ar y digwyddiad <a href="{3}">{2}</a> yng nghalendr <a href="{5}">{4}</a>.]]></resource>
+  <resource name="ActivityMessage_Registered"><![CDATA[Bydd <a href="{1}">{0}</a> yn mynd i'r digwyddiad <a href="{3}">{2}</a>.]]></resource>
+  <resource name="ActivityMessage_Cancel"><![CDATA[Ni fydd <a href="{1}">{0}</a> yn mynd i'r digwyddiad <a href="{3}">{2}</a> mwyach.]]></resource>
+  
+  <resource name="calendar_BackLabel">Yn ôl i&apos;r calendr</resource>
+
+  <resource name="calendar_grouprss_autodiscover">{0} calendr</resource>
+
+  <resource name="RegistrationStatus_NotSet">Ddim yn gwybod</resource>
+  <resource name="RegistrationStatus_Confirmed">Wedi’i gadarnhau</resource>
+  <resource name="RegistrationStatus_NotApproved">Yn aros am gadarnhad</resource>
+  <resource name="RegistrationStatus_Invited">Gwahoddiad wedi&apos;i anfon</resource>
+  <resource name="RegistrationStatus_Cancelled">Wedi canslo</resource>
+
+  <resource name="RegistrationStatus_ConfirmAction">Wedi’i gadarnhau</resource>
+  <resource name="RegistrationStatus_InviteActions">Gwahodd</resource>
+
+  <resource name="RegistrationType_NotSet">Dim angen cofrestru</resource>
+  <resource name="RegistrationType_Open">Agor y broses cofrestru</resource>
+  <resource name="RegistrationType_ApprovalRequired">Angen cadarnhad o&apos;r cofrestru</resource>
+  <resource name="RegistrationType_InvitationOnly">Angen cael gwahoddiad</resource>
+
+  <resource name="calendar_AddRegistration">Ychwanegu cofrestriad</resource>
+  <resource name="calendar_SelectUsers">Dewis defnyddwyr</resource>
+  <resource name="calendar_SelectEmails">Cyfeiriadau e-bost (1 fesul llinell)</resource>
+  <resource name="calendar_RegistrationStatus">Statws</resource>
+  <resource name="calendar_AddRegistrations">Ychwanegu cofrestriadau</resource>
+  <resource name="calendar_AcceptInvite">Derbyn y gwahoddiad</resource>
+
+  <resource name="calendar_PerformRegistration">Cofrestru ar gyfer y digwyddiad hwn</resource>
+  <resource name="calendar_RequestRegistration">Gofyn am gael cofrestru ar gyfer y digwyddiad hwn</resource>
+  <resource name="calendar_UpdateRegistration">Diweddaru&apos;r cofrestriad</resource>
+  <resource name="calendar_UpdateRegistration">Diweddaru&apos;r cofrestriad</resource>
+  <resource name="calendar_RegisterSortBy_User">Enw defnyddiwr</resource>
+  <resource name="calendar_RegisterSortBy_Status">Statws cofrestru</resource>
+  <resource name="calendar_RegisterSortBy_Date">Dyddiad cofrestru</resource>
+
+  <resource name="calendar_registration_confirmed">Ar hyn o bryd rydych chi&apos;n dod i&apos;r digwyddiad hwn.</resource>
+  <resource name="calendar_registration_pending">Wrthi&apos;n aros am eich cofrestriad ar gyfer y digwyddiad hwn</resource>
+  <resource name="calendar_registration_cancelled">Rydych chi wedi canslo&apos;ch cofrestriad</resource>
+  <resource name="calendar_registration_invited">Rydych chi wedi cael eich gwahodd i gofrestru ar gyfer y digwyddiad hwn</resource>
+  <resource name="calendar_registration_expired">Mae&apos;r gwahoddiad hwn wedi dod i ben neu dydy&apos;r cod ddim yn ddilys</resource>
+  
+  <resource name="calendar_registration_nospace">Mae&apos;r digwyddiad hwn yn llawn ar hyn o bryd neu mae&apos;r broses cofrestru wedi&apos;i chau</resource>
+  <resource name="calendar_event_cancelled">Mae&apos;r digwyddiad hwn wedi&apos;i ganslo</resource>
+  <resource name="calendar_event_past">Mae&apos;r digwyddiad hwn yn y gorffennol</resource>
+
+  <resource name="calendar_Cancel">Canslo&apos;r cofrestriad</resource>
+  <resource name="calendar_CancelInvite">Canslo’r gwahoddiad</resource>
+  <resource name="calendar_CancelEventConfirmation">Ydych chi’n siŵr eich bod am ganslo’r digwyddiad hwn? Does dim modd dad-wneud hyn.</resource>
+  <resource name="calendar_Confirm">Cadarnhau</resource>
+  <resource name="calendar_CancelConfirmation">Ydych chi’n siŵr eich bod am ganslo? Does dim modd dad-wneud hyn.</resource>
+  <resource name="calendar_registration_overcapacity_error">Mae cyfanswm nifer y bobl sydd wedi cofrestru yn fwy na&apos;r llefydd sydd ar gael yn y digwyddiad hwn.</resource>
+
+  <resource name="calendar_GenericError">Gwall gyda&apos;r cais diwethaf.</resource>
+  <resource name="calendar_ViewMap">Ewch i&apos;r map</resource>
+ 
+  <!--Validation-->
+  <resource name="calendar_name_validation">Mae angen enw&apos;r calendr.</resource>
+  <resource name="calendar_description_validation_max">All disgrifiad o&apos;r calendr ddim bod yn fwy na 256 o nodau</resource>
+
+  <resource name="Calendar_Lookup_NoMatches">Dim byd yn cyfateb</resource>
+  <resource name="CalendarOrGroupLookUp_CalendarType">Calendr</resource>
+  <resource name="CalendarOrGroupLookUp_CurrentCalendar">Y calendr cyfredol</resource>
+  <resource name="CalendarSelectionControl_SelectCalendars">Tynnu o galendr(au) penodol</resource>
+  <resource name="CalendarSelectionControl_SelectGroup">Tynnu o grŵp</resource>
+  <resource name="Calendar_IncludeCalendarsInSubGroups">Cynnwys calendrau yn is-${group_lowercase} ${group_lowercase} a ddewiswyd.</resource>
+
+  
+  <!--Exceptions-->
+  <resource name="Calendar_RegistrationException_BadEvent">Digwyddiad annilys ar gyfer cofrestru</resource>
+  <resource name="Calendar_RegistrationException_BadUser">Defnyddiwr annilys ar gyfer cofrestru</resource>
+  <resource name="Calendar_RegistrationException_BadRegistrationType">Math cofrestru annilys ar gyfer cofrestru</resource>
+  <resource name="Calendar_RegistrationException_FullEvent">Mae&apos;r digwyddiad yn llawn neu mae&apos;r broses cofrestru wedi&apos;i chau</resource>
+
+  <resource name="Calendar_EventException_BadDateRange">Mae amrediad dyddiadau annilys wedi&apos;i bennu</resource>
+  <resource name="Calendar_EventException_BadTitle">Teitl annilys neu ddim teitl wedi&apos;i nodi ar gyfer digwyddiad</resource>
+  <resource name="Calendar_EventException_BadDescription">Disgrifiad annilys neu ddim disgrifiad wedi&apos;i nodi ar gyfer digwyddiad</resource>
+  <resource name="Calendar_EventException_BadCalendar">Calendr annilys neu ddim calendr wedi&apos;i nodi ar gyfer digwyddiad</resource>
+  <resource name="Calendar_EventException_BadUser">Defnyddiwr annilys neu ddim defnyddiwr wedi&apos;i nodi ar gyfer digwyddiad</resource>
+
+  <!-- group Custom navigation -->
+  <resource name="SingleCalendarCustomNavigation_LinkTypeName">Un calendr</resource>
+  <resource name="SingleCalendarCustomNavigation_Calendar">Calendr</resource>
+  <resource name="SingleCalendarCustomNavigation_Calendar_Description">Cliciwch y calendr i greu dolen iddo.</resource>
+  <resource name="SingleCalendarCustomNavigation_Label">Label</resource>
+  <resource name="SingleCalendarCustomNavigation_Label_Description">Rhowch label dewisol ar gyfer y ddolen hon.  Os na osodir hyn, caiff enw&apos;r calendr ei ddefnyddio.</resource>
+
+  <resource name="GroupCalendarsCustomNavigation_LinkTypeName">Calendr(au) grŵp</resource>
+  <resource name="GroupCalendarsCustomNavigation_Group">Grŵp</resource>
+  <resource name="GroupCalendarsCustomNavigation_Group_Description">Dewiswch y grŵp sy&apos;n cynnwys y calendr(au) i greu dolen iddo/iddynt.</resource>
+  <resource name="GroupCalendarsCustomNavigation_Label_Single">Calendr</resource>
+  <resource name="GroupCalendarsCustomNavigation_Label_Plural">Calendrau</resource>
+  <resource name="GroupCalendarsCustomNavigation_Label">Label</resource>
+  <resource name="GroupCalendarsCustomNavigation_Label_Description">Rhowch label dewisol ar gyfer y ddolen hon.</resource>
+
+  <resource name="CF_FeaturedContent_Name">Cynnwys a chalendr sy&apos;n cael sylw</resource>
+  <resource name="CF_FeaturedContent_Description">Yn dangos cynnwys sy&apos;n cael sylw, gan gynnwys digwyddiadau&apos;r calendr</resource>
+  <resource name="CF_FeaturedContent_Title">Cynnwys sy&apos;n cael sylw</resource>
+
+  <resource name="Calendar_PageComment_Pending">Diolch am rannu&apos;ch sylw! Os na fydd eich sylw yn ymddangos yn syth, byddwch yn amyneddgar - gall gymryd ychydig o funudau i&apos;w gyhoeddi neu mae&apos;n bosib bod angen ei safoni.</resource>
+
+  <!--scripted widgets-->
+
+</root>

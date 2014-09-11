@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <message id="1">
+    <title>Gwrthodwyd mynediad: ddim yn rheolwr cymuned</title>
+    <body>Dydych chi ddim yn rheolwr cymuned.</body>
+  </message>
+
+  <message id="2">
+    <title>Gwrthodwyd mynediad: gwrthodwyd caniatâd i olygu</title>
+    <body>Dydy&apos;r Holi ac Ateb hwn ddim yn bodoli neu does gennych chi ddim hawl i&apos;w olygu.</body>
+  </message>
+
+  <message id="3"><!-- test comment -->
+    <title>Gwrthodwyd mynediad: ddim yn safonwr</title>
+    <body>Dydych chi ddim yn safonwr.</body>
+  </message>
+
+  <message id="4">
+    <title>Post dyblyg</title>
+    <body>Mae rheolwr cymuned wedi ffurfweddu&apos;r fforymau Holi ac Ateb fel nad ydynt yn caniatáu post dyblyg.</body>
+  </message>
+
+  <message id="5">
+    <title>Doedd dim modd dod o hyd i&apos;r ffeil y gofynnwyd amdani</title>
+    <body>Yn anffodus, mae&apos;r ffeil y gofynnwyd amdani wedi cael ei symud neu ei dileu, a dydy hi ddim ar gael mwyach.</body>
+  </message>
+
+  <message id="6">
+    <title>Heb ddod o hyd: heb ddod o hyd i&apos;r adnodd</title>
+    <body>Dydy’r adnodd y gofynnwyd amdano ddim yn bodoli.</body>
+  </message>
+
+  <message id="7">
+    <title>Wedi creu cyfrif defnyddiwr</title>
+    <body>Llwyddwyd i greu&apos;ch cyfrif defnyddiwr. Cyn bo hir, byddwch yn derbyn e-bost yn cynnwys cyfrinair dros dro y gallwch ei ddefnyddio i fewngofnodi.</body>
+  </message>
+
+  <message id="8">
+    <title>Post yn aros i gael ei safoni</title>
+    <body>Rydych chi wedi postio yn Holi ac Ateb ac mae angen i safonwr gymeradwyo&apos;r postiadau cyn iddynt fod ar gael i&apos;r cyhoedd. Os yw rheolwr cymuned wedi ffurfweddu&apos;r Holi ac Ateb hwn i ddelio â hysbysiadau e-bost, byddwch yn cael e-bost pan fydd eich post yn cael ei gymeradwyo neu ei wrthod.</body>
+  </message>
+
+  <message id="9">
+    <title>Heb ddod o hyd i&apos;r post</title>
+    <body>Doed dim modd dod o hyd i&apos;r post y gofynnwyd amdano neu dydy hyn ddim yn bodoli mwyach. Mae&apos;n bosib bod rheolwr cymuned neu safonwr wedi dileu&apos;r post.</body>
+  </message>
+
+  <message id="10">
+    <title>Dim post wedi&apos;i ddewis</title>
+    <body>Does dim modd dod o hyd i ddim post ar yr URL rydych chi wedi&apos;i roi.</body>
+  </message>
+
+  <message id="11">
+    <title>Problem wrth bostio</title>
+    <body>Ymddiheuriadau, ond roedd problem wrth bostio&apos;ch neges. Os byddwch yn dal i gael y broblem hon, rhowch wybod i reolwr cymuned neu safonwr.</body>
+  </message>
+
+  <message id="14">
+    <title>Heb ddod o hyd i&apos;r defnyddiwr</title>
+    <body>Doedd dim modd dod o hyd i&apos;r defnyddiwr y gofynnwyd amdano.</body>
+  </message>
+
+  <message id="15">
+    <title>Cyfrinair defnyddiwr wedi&apos;i newid</title>
+    <body>Llwyddwyd i newid y cyfrinair.</body>
+  </message>
+
+  <message id="16">
+    <title>Wedi methu newid cyfrinair defnyddiwr</title>
+    <body>Gwall wrth geisio newid eich cyfrinair. Rhowch gynnig arall arni.</body>
+  </message>
+
+  <message id="17">
+    <title>Manylion adnabod defnyddiwr annilys</title>
+    <body>Does dim modd dilysu&apos;r enw defnyddiwr a/neu&apos;r cyfrinair neu dydy&apos;ch cyfrif ddim wedi cael ei gymeradwyo eto.</body>
+  </message>
+
+  <message id="18">
+    <title>Dim postiadau heb eu ateb</title>
+    <body>Heb ddod o hyd i ddim postiadau heb eu hateb.</body>
+  </message>
+
+  <message id="19">
+    <title>Dydy&apos;r defnyddiwr ddim yn derbyn negeseuon preifat</title>
+    <body>Mae&apos;r defnyddiwr rydych chi&apos;n ceisio anfon neges breifat ato wedi diffodd negeseuon preifat.</body>
+  </message>
+
+  <message id="20">
+    <title>Heb gael dim canlyniadau wrth chwilio am ddefnyddwyr</title>
+    <body>Newidiwch eich meini prawf chwilio am ddefnyddwyr - heb ddod o hyd i ddim canlyniadau.</body>
+  </message>
+
+  <message id="21">
+    <title>Dim postiadau gweithredol</title>
+    <body>Heb ddod o hyd i ddim postiadau gweithredol.</body>
+  </message>
+
+  <message id="22">
+    <title>Chewch chi ddim anfon negeseuon preifat atoch chi&apos;ch hun.</title>
+    <body>Chewch chi ddim anfon negeseuon preifat atoch chi eich hun.</body>
+  </message>
+
+  <message id="23">
+    <title>Rhaid disgwyl i’ch cyfrif gael ei gymeradwyo</title>
+    <body>Ni fyddwch yn gallu mewngofnodi nes bydd eich cyfrif wedi cael ei gymeradwyo. Byddwch yn cael e-bost pan fydd eich cyfrif wedi cael ei gymeradwyo.</body>
+  </message>
+
+  <message id="24">
+    <title>Croeso!</title>
+    <body>Mae&apos;ch cyfrif wedi cael ei greu ac rydych chi wedi mewngofnodi. Llongyfarchiadau! Rydych chi&apos;n barod nawr i gwrdd ag aelodau&apos;r gymuned sydd o’r un anian â chi a dechrau cymryd rhan mewn sgyrsiau gwerthfawr.</body>
+  </message>
+
+  <message id="25">
+    <title>Cyfrif heb ei gymeradwyo</title>
+    <body>Dydych chi ddim wedi cael eich cymeradwyo i ddefnyddio&apos;r gymuned hon.</body>
+  </message>
+
+  <message id="26">
+    <title>Cyfrif wedi&apos;i wahardd</title>
+    <body>Does gennych chi ddim hawl i ddefnyddio&apos;r gymuned hon.</body>
+  </message>
+
+  <message id="27">
+    <title>Gwall mewngofnodi anhysbys</title>
+    <body>Yn anffodus bu gwall anhysbys wrth geisio gwirio&apos;ch manylion adnabod. Rhowch gynnig arall arni.</body>
+  </message>
+
+  <message id="28">
+    <title>Ddim yn gallu anfon e-bost</title>
+    <body>Yn anffodus, bu gwall wrth geisio anfon e-bost.</body>
+  </message>
+
+  <message id="29">
+    <title>Cofrestriad defnyddiwr newydd wedi&apos;i analluogi</title>
+    <body>Mae rheolwr cymuned wedi analluogi&apos;r dasg creu cyfrif newydd. Dewch yn ôl wedyn neu - anfonwch e-bost at reolwr cymuned - i weld a yw&apos;n bosib cofrestru.</body>
+  </message>
+
+  <message id="30">
+    <title>Mewngofnodi wedi&apos;i analluogi</title>
+    <body>Mae rheolwr cymuned wedi analluogi&apos;r dasg mewngofnodi i bawb. Dewch yn ôl wedyn neu - anfonwch e-bost at reolwr cymuned - i weld a yw&apos;n bosib mewngofnodi.</body>
+  </message>
+
+  <message id="31">
+    <title>Mynediad wedi&apos;i wrthod</title>
+    <body>Does gennych chi ddim hawl i wneud yr hyn rydych chi&apos;n gofyn am gael gwneud.</body>
+  </message>
+
+  <message id="32">
+    <title>Gwrthodwyd mynediad: caniatâd post wedi&apos;i wrthod</title>
+    <body>Dydy&apos;r Holi ac Ateb hwn ddim yn bodoli neu does gennych chi ddim hawl postio.</body>
+  </message>
+
+  <message id="33">
+    <title>Heb ddod o hyd i ${group_propercase}</title>
+    <body>Does dim modd dod o hyd i&apos;r ${group_propercase} dan sylw.</body>
+  </message>
+
+  <message id="34">
+    <title>Heb ddod o hyd i&apos;r templed e-bost</title>
+    <body>Does dim modd dod o hyd i&apos;r templed e-bost dan sylw.</body>
+  </message>
+
+  <message id="35">
+    <title>Gwall anhysbys wrth chwilio</title>
+    <body>Yn anffodus, bu gwall anhysbys wrth chwilio. Rhowch gynnig arall ar chwilio.</body>
+  </message>
+
+  <message id="36">
+    <title>Gwrthodwyd mynediad: caniatâd ateb wedi&apos;i wrthod</title>
+    <body>Dydy&apos;r Holi ac Ateb hwn ddim yn bodoli neu does gennych chi ddim hawl ateb postiadau yn y fforwm Holi ac Ateb.</body>
+  </message>
+
+  <message id="37">
+    <title>Gwrthodwyd mynediad: caniatâd cyhoeddi wedi&apos;i wrthod</title>
+    <body>Dydy&apos;r Holi ac Ateb hwn ddim yn bodoli neu does gennych chi ddim hawl creu cyhoeddiadau yn y fforwm Holi ac Ateb.</body>
+  </message>
+
+  <message id="38">
+    <title>Hawl wedi dod i ben: caniatâd i olygu post wedi dod i ben</title>
+    <body>Mae rheolwr cymuned wedi ffurfweddu&apos;r Holi ac Ateb hwn fel bod cyfyngiad amser ar gyfer golygu negeseuon. Os bydd angen golygu neges o hyd, holwch safonwr Holi ac Ateb.</body>
+  </message>
+
+  <message id="39">
+    <title>Post wedi&apos;i gloi</title>
+    <body>Mae&apos;r post hwn wedi&apos;i gloi a ddim yn caniatáu atebion.</body>
+  </message>
+
+  <message id="40">
+    <title>Hawl wedi dod i ben: caniatâd i ddileu post wedi dod i ben</title>
+    <body>Mae rheolwr cymuned wedi ffurfweddu&apos;r Holi ac Ateb hwn fel bod cyfyngiad amser ar gyfer dileu negeseuon. Os bydd angen dileu neges o hyd, holwch safonwr Holi ac Ateb.</body>
+  </message>
+
+  <message id="41">
+    <title>Gwrthodwyd mynediad: caniatâd dileu wedi&apos;i wrthod</title>
+    <body>Dydy&apos;r Holi ac Ateb hwn ddim yn bodoli neu does gennych chi ddim hawl dileu postiadau yn y fforwm Holi ac Ateb.</body>
+  </message>
+  
+  <message id="43">
+	<title>Heb ddod o hyd i&apos;r wisg</title>
+	<body>Heb ddod o hyd i&apos;r ffeil wisg</body>
+  </message>
+
+  <message id="45">
+    <title>Heb ddod o hyd i ddim canlyniadau</title>
+    <body>Heb ddod o hyd i ddim canlyniadau chwilio.</body>
+  </message>
+  
+  <message id="46">
+	<title>Atodiad heb ei ganiatáu</title>
+	<body>Mae&apos;ch post wedi&apos;i gadw, ond ddim eich atodiad. Mae rheolwr cymuned wedi gwrthod i fathau penodol o ffeiliau gael eu llwytho i fyny a dim ond un estyniad gaiff y ffeil (enw ffeil.ext).</body>
+  </message>
+
+  <message id="47">
+	<title>Mynediad wedi&apos;i wrthod</title>
+	<body>Does gennych chi ddim hawl i weld/llwytho&apos;r eitem hon i lawr.</body>
+  </message>
+
+  <message id="48">
+	<title>E-bost wedi&apos;i hanfon at ddefnyddiwr</title>
+	<body>Anfonwyd yr e-bost at y defnyddiwr.</body>
+  </message>
+
+  <message id="49">
+	<title>Atodiad yn rhy fawr</title>
+	<body>Mae&apos;ch post wedi&apos;i gadw, ond ddim eich atodiad. Roedd eich atodiad yn fwy na&apos;r maint mwyaf a ganiateir. Er bod eich post wedi cael ei gyflwyno, os cafodd ei anfon at Holi ac Ateb a safonir, fydd y post ddim ar gael nes iddo gael ei gymeradwyo gan safonwr.</body>
+  </message>
+
+  <message id="50">
+	<title>Atodiadau wedi&apos;u hanalluogi</title>
+	<body>Mae&apos;ch post wedi&apos;i gadw, ond ddim eich atodiad. Mae atodiadau wedi&apos;u hanalluogi ar y fforwm Holi ac Ateb hwn.</body>
+  </message>
+
+  <message id="51">
+	<title>Yr ateb cyfrinachol wedi&apos;i newid</title>
+	<body>Llwyddwyd i newid eich hen ateb cyfrinachol. Defnyddiwch hyn pa bryd bynnag y bydd angen gwneud hynny er mwyn adfer eich cyfrinair.</body>
+  </message>
+
+  <message id="52">
+	<title>Wedi methu newid yr ateb cyfrinachol</title>
+	<body>Gwall wrth geisio newid eich ateb cyfrinachol. Rhowch gynnig arall arni.</body>
+  </message>
+
+  <message id="53">
+    <title>Heb ddod o hyd i&apos;r rôl</title>
+    <body>Doedd dim modd dod o hyd i&apos;r rôl dan sylw.</body>
+  </message>
+
+  <message id="54">
+    <title>Rôl wedi&apos;i diweddaru </title>
+    <body>Mae manylion y rôl wedi&apos;u diweddaru.</body>
+  </message>
+
+  <message id="55">
+    <title>Rôl wedi&apos;i dileu</title>
+    <body>Mae’r rôl wedi cael ei dileu.</body>
+  </message>
+
+  <message id="56">
+    <title>Dim hawl i weithredu&apos;r rôl</title>
+    <body>Doeddech chi ddim yn gallu gwneud yr hyn rydych chi newydd geisio&apos;i wneud ar y rôl dan sylw.</body>
+  </message>
+
+  <message id="57">
+    <title>Heb ddod o hyd i&apos;r adnodd</title>
+    <body>Dydy’r adnodd y gofynnwyd amdano ddim yn bodoli.</body>
+  </message>
+
+  <message id="65">
+    <title>Gwrthodwyd mynediad: atal llif post</title>
+    <body>Yr amser angenrheidiol rhwng postiadau heb fynd heibio. Arhoswch ychydig eiliadau cyn rhoi cynnig arall ar bostio.</body>
+  </message>
+
+  <message id="67">
+    <title>Gwrthodwyd mynediad: caniatâd dileu wedi&apos;i wrthod</title>
+    <body>Mae&apos;r hawl i ddileu&apos;r post wedi cael ei gwrthod. Does dim modd dileu post os oes atebion wedi cael eu hanfon  iddo.</body>
+  </message>
+
+  <message id="68">
+    <title>Dim postiadau heb eu darllen</title>
+    <body>Heb ddod o hyd i ddim postiadau dydych chi ddim wedi&apos;u darllen</body>
+  </message>
+
+  <message id="69">
+    <title>Ailosod cyfrinair defnyddiwr</title>
+    <body>Rydych chi wedi gofyn bod cyfrinair newydd yn cael ei greu a&apos;i anfon i’ch cyfeiriad e-bost (&lt;font color=&quot;red&quot;&gt;&lt;b&gt;{0}&lt;/b&gt;&lt;/font&gt;). Gadewch hyd at 15 munud er mwyn sicrhau bod hyn wedi&apos;i wneud.</body>
+  </message>
+  
+  <message id="72">
+    <title>Wedi anfon dolen cyfrinair defnyddiwr</title>
+    <body>Rydych chi wedi gofyn bod dolen yn cael ei hanfon i&apos;ch cyfeiriad e-bost (&lt;font color=&quot;red&quot;&gt;&lt;b&gt;{0}&lt;/b&gt;&lt;/font&gt;) a bydd hyn yn eich galluogi i ailosod eich cyfrinair. Bydd yr e-bost yn cyrraedd cyn bo hir.</body>
+  </message>  
+
+  <message id="73">
+    <title>Defnyddiwr wedi mewngofnodi&apos;n barod</title>
+    <body>Rydych chi wedi mewngofnodi’n barod. Os cawsoch eich ailgyfeirio yma wrth i chi geisio defnyddio rhan arall o&apos;r safle, cysylltwch â rheolwr cymuned i ofyn am hawliau ychwanegol.</body>
+  </message>
+  
+  <message id="74">
+    <title>Cyfrif defnyddiwr wedi&apos;i analluogi</title>
+    <body>Mae rheolwr cymuned wedi analluogi&apos;r defnyddiwr rydych chi wedi dewis ei weld neu gysylltu ag ef/hi.</body>
+  </message>  
+  
+  <message id="75">
+    <title>Trwydded annilys</title>
+    <body>Does gan y safle hwn ddim trwydded ddigonol i gwblhau&apos;r weithred dan sylw. Cysylltwch â rheolwr cymuned.</body>
+  </message> 
+
+  <message id="76">
+    <title>Gwall trwydded</title>
+    <body>Gwall wrth geisio llwytho trwyddedau sydd wedi&apos;u gosod ar hyn o bryd. Cysylltwch â rheolwr cymuned.</body>
+  </message> 
+  
+  <message id="77">
+	<title>Mae&apos;r gwahoddiad ar goll neu mae&apos;n annilys</title>
+	<body>Drwy wahoddiad yn unig y ceir creu defnyddwyr newydd. Roedd allwedd y gwahoddiad ar goll neu mae&apos;n annilys ar hyn o bryd.</body>
+  </message>
+  
+  <message id="78">
+    <title>Wedi derbyn y gwahoddiad</title>
+    <body>Rydych chi wedi llwyddo i dderbyn y gwahoddiad i ymuno â&apos;r gymuned hon.</body>
+  </message>
+  
+  <message id="79">
+    <title>Croeso!</title>
+    <body>Rydych chi wedi llwyddo i dderbyn y gwahoddiad i ymuno â&apos;r gymuned hon. Mae&apos;ch cyfrif wedi cael ei greu ac rydych chi wedi mewngofnodi erbyn hyn.</body>
+  </message>
+  
+  <message id="80">
+	<title>Tag dyblyg</title>
+	<body>Mae tag â&apos;r enw penodedig eisoes yn bodoli.</body>
+  </message>
+
+  <message id="81">
+	<title>Wedi defnyddio mwy na chwota&apos;r ffeil blog </title>
+	<body>Wedi defnyddio mwy na chyfanswm cwota maint ffeil storfa&apos;r ffeil blog. Rhowch gynnig ar lwytho ffeil lai i fyny neu cysylltwch â rheolwr cymuned i addasu gosodiadau&apos;r cwota.</body>
+  </message>
+
+  <message id="82">
+	<title>Math o ffeil ddim yn ddilys</title>
+	<body>Dydy&apos;r math hwn o ffeil ddim yn cael ei ganiatáu.</body>
+  </message>
+
+  <message id="83">
+	<title>Dydy storfa&apos;r ffeil blog ddim yn cael ei chaniatáu.</title>
+	<body>Mae storfa&apos;r ffeil blog wedi cael ei hanalluogi.</body>
+  </message>
+
+  <message id="84">
+    <title>Wedi defnyddio mwy na chwota ffeil y safle</title>
+    <body>Wedi defnyddio mwy na chyfanswm cwota maint ffeil storfa ffeil y safle. Rhowch gynnig ar lwytho ffeil lai i fyny neu cysylltwch â rheolwr cymuned i addasu gosodiadau&apos;r cwota.</body>
+  </message>
+
+  <message id="85">
+    <title>Dydy storfa&apos;r ffeil ddim yn cael ei chaniatáu.</title>
+    <body>Dydy storfa&apos;r ffeil ddim yn cael ei chaniatáu ar y safle hwn ar hyn o bryd.</body>
+  </message>
+
+  <message id="86">
+    <title>Wedi defnyddio mwy na chwota ffeil y defnyddiwr</title>
+    <body>Wedi defnyddio mwy na chyfanswm cwota maint ffeil storfa eich ffeil. Rhowch gynnig ar lwytho ffeil lai i fyny neu cysylltwch â rheolwr cymuned i addasu gosodiadau&apos;r cwota.</body>
+  </message>
+
+  <message id="87">
+    <title>Dydy storfa&apos;r defnyddiwr ddim yn cael ei chaniatáu.</title>
+    <body>Dydy storfa ffeil y defnyddiwr ddim yn cael ei chaniatáu ar y safle hwn ar hyn o bryd.</body>
+  </message>
+
+  <message id="88">
+    <title>Dydy allweddi tudalen ddyblyg ddim yn cael eu caniatáu.</title>
+	<body>Mae tudalen â&apos;r enw hwn arni eisoes yn bodoli yn y wici hwn. Dewiswch enw arall i&apos;r dudalen hon.</body>
+  </message>
+
+	<message id="90">
+		<title>Fforymau Holi ac Ateb wedi&apos;u hanalluogi dros dro</title>
+		<body>Mae rheolwr cymuned wedi analluogi&apos;r fforymau Holi ac Ateb dros dro.</body>
+	</message>
+
+	<message id="91">
+		<title>${groups_propercase} wedi&apos;u hanalluogi dros dro</title>
+		<body>Mae rheolwr cymuned wedi analluogi ${groups_lowercase} dros dro.</body>
+	</message>
+
+	<message id="92">
+		<title>Orielau cyfryngau wedi&apos;u hanalluogi dros dro</title>
+		<body>Mae rheolwr cymuned wedi analluogi&apos;r orielau cyfryngau dros dro.</body>
+	</message>
+
+	<message id="93">
+		<title>Blogiau wedi&apos;u hanalluogi dros dro</title>
+		<body>Mae rheolwr cymuned wedi analluogi&apos;r blogiau dros dro.</body>
+	</message>
+
+	<message id="94">
+		<title>Wicis wedi&apos;u hanalluogi dros dro</title>
+		<body>Mae rheolwr cymuned wedi analluogi&apos;r wicis dros dro.</body>
+	</message>
+
+	<message id="95">
+		<title>Mae tudalen wici ddiofyn wedi&apos;i chloi.</title>
+		<body>Does dim modd dileu&apos;r dudalen ddiofyn ar gyfer wici. Golygwch y cynnwys fel ei fod yn wag yn lle hynny.</body>
+	</message>
+
+  <message id="96">
+    <title>Wedi mynd dros y maint mwyaf a ganiateir ar gyfer llwytho i fyny </title>
+    <body>Mae&apos;r ffeil a lwythwyd i fyny yn rhy fawr. Llwythwch ffeil lai i fyny neu cysylltwch â rheolwr cymuned i addasu gosodiadau maint ffeil a ganiateir.</body>
+  </message>
+
+  <message id="97">
+    <title>Gwall cais anhysbys</title>
+    <body>
+        <![CDATA[
+      Doedd dim modd prosesu'ch cais. Gall y gwall hwn ddigwydd:
+      <ol>
+      <li>Os caiff ffeil ei llwytho i fyny a oedd yn rhy fawr</li>
+      <li>Os bydd y cais yn cymryd gormod o amser i'w brosesu</li>
+      <li>Os cafodd y cais ei fformatio'n anghywir</li>
+      <li>Os bu gwall annisgwyl ar y gweinydd</li>
+      </ol>
+    ]]>
+      </body>
+  </message>
+
+	<message id="98">
+		<title>Enw grŵp maes dyblyg</title>
+		<body>Rhaid i enw&apos;r grŵp maes fod yn unigryw.</body>
+	</message>
+
+
+    <message id="99">
+        <title>Defnyddio mwy na gosodiadau&apos;r drwydded</title>
+        <body>
+            Defnyddir mwy na gosodiadau&apos;r drwydded gyda Telligent Community, felly doedd dim modd cyflawni&apos;ch cais diwethaf. Holwch weinyddwr eich system.
+        </body>
+    </message>
+
+    <message id="100">
+        <title>Defnyddio mwy na gosodiadau&apos;r drwydded</title>
+        <body>
+            Defnyddir mwy na gosodiadau&apos;r drwydded gyda Telligent Enterprise, felly doedd dim modd cyflawni&apos;ch cais diwethaf. Holwch weinyddwr eich system.
+        </body>
+    </message>
+
+  <message id="101">
+    <title>Aros i glywed am gais aelodaeth</title>
+    <body>
+        Os caiff eich cais i fod yn aelod o’r grŵp hwn ei dderbyn, yna cewch fynediad iddo. Dewch yn ôl i weld wedyn.      
+    </body>
+  </message>
+
+  <message id="103">
+    <title>Tewi yn Llwyddiannus</title>
+    <body>
+      Ni fyddwch yn cael hysbysiadau e-bost mwyach ar gyfer yr edefyn hwn.
+    </body>
+  </message>
+
+  <message id="104">
+    <title>Heb ddod o hyd i&apos;r dudalen</title>
+    <body>Doedd dim modd dod o hyd i&apos;r dudalen dan sylw neu dydy hi ddim yn bodoli mwyach. Mae&apos;n bosib bod rheolwr cymuned neu safonwr wedi dileu&apos;r dudalen.</body>
+  </message>
+  
+  <message id="105">
+    <title>Gwall dilysu</title>
+    <body>Bu gwall wrth ddilysu maes. Ewch i&apos;r dudalen flaenorol a rhoi cynnig arall arni.</body>
+  </message>
+
+	<message id="106">
+		<title>Cyfrif system  </title>
+		<body>Mae&apos;r cyfrif defnyddiwr rydych chi&apos;n ceisio ei ddefnyddio yn gyfrif system barod a does dim modd i chi ryngweithio â&apos;r cyfrif hwn na mewngofnodi iddo.</body>
+	</message>
+
+	<message id="107">
+		<title>Enw ffeil yn rhy hir</title>
+		<body>Mae enw&apos;r ffeil sy&apos;n ceisio cael ei llwytho i fyny yn rhy hir. Rhowch enw ffeil byrrach.</body>
+	</message>
+
+	<message id="108">
+		<title>Wedi methu llwytho i fyny</title>
+		<body>Does dim modd llwytho&apos;r ffeil i fyny ar hyn o bryd, rhowch gynnig arall arni’n nes ymlaen. Os bydd y broblem yn parhau, cysylltwch â rheolwr cymuned.</body>
+	</message>
+
+    <message id="110">
+        <title>Cyfrif wedi’i gloi</title>
+        <body>Mae’ch cyfrif wedi’i gloi oherwydd gormod o gynigion aflwyddiannus i fewngofnodi. Rhowch gynnig arall arni&apos;n nes ymlaen neu cysylltwch â rheolwr cymuned.</body>
+    </message>
+
+	<message id="111">
+		<title>Cais OAuth wedi methu</title>
+		<body>Doedd dim modd cysylltu â&apos;r gweinydd dilysu neu cafodd cais gwael ei gyflwyno. Rhowch gynnig arall arni’n nes ymlaen. Os bydd y broblem yn parhau, cysylltwch â rheolwr cymuned.</body>
+	</message>
+
+	<message id="112">
+		<title>Gwall OAuth</title>
+		<body>Gwall wrth geisio dilysu&apos;r mewngofnodi, rhowch gynnig arall arni&apos;n nes ymlaen. Os bydd y broblem yn parhau, cysylltwch â rheolwr cymuned.</body>
+	</message>
+
+	<message id="113">
+		<title>Gwall wrth ddosrannu templed e-bost</title>
+		<body>Gwall wrth geisio dosrannu templed e-bost.</body>
+	</message>
+
+	<message id="114">
+		<title>Gwall wrth gyfleu darn cynnwys</title>
+		<body>Gwall wrth geisio cyfleu darn y cynnwys.</body>
+	</message>
+
+	<message id="115">
+		<title>Sylw post yn rhy hir</title>
+		<body>Mae&apos;r sylw y ceisioch chi ei ychwanegu yn rhy hir.</body>
+	</message>
+
+	<message id="117">
+		<title>Dydy&apos;r broses gofrestru ddim ar gael</title>
+		<body>Dydy&apos;r safle hwn ddim yn derbyn cofrestriadau defnyddwyr newydd ar hyn o bryd.</body>
+	</message>
+
+	<message id="119">
+		<title>Wedi methu mewngofnodi i OAuth</title>
+		<body>Wedi methu mewngofnodi, rhowch gynnig arall arni. Os bydd y broblem yn parhau, cysylltwch â rheolwr cymuned.</body>
+	</message>
+
+	<message id="120">
+		<title>Mathau penodedig o gynnwys ddim yn gallu delio â sylwadau.</title>
+		<body>Mae&apos;r cynnwys y ceisioch chi roi sylw arno ddim yn gallu delio â sylwadau.</body>
+	</message>
+
+	<message id="121">
+		<title>Mathau penodedig o gynnwys ddim yn gallu delio â sgoriau.</title>
+		<body>Mae&apos;r cynnwys y ceisioch chi roi sgôr iddo ddim yn gallu delio â sgoriau.</body>
+	</message>
+
+  <message id="123">
+    <title>Cyfyngiadau trwyddedu</title>
+    <body>Dydy&apos;r drwydded a osodwyd ddim yn caniatáu&apos;r weithred a wnaethoch.</body>
+  </message>
+
+	<message id="125">
+		<title>Cyfrif defnyddiwr heb ei greu</title>
+		<body>Wedi methu creu cyfrif defnyddiwr.</body>
+	</message>
+
+    <message id="126">
+        <title>Dydy awdurdodiad cais cleient OAuth ddim yn cael ei ganiatáu</title>
+        <body>Does gan y defnyddiwr hwn ddim y math o grant a ganiateir i wneud y math hwn o awdurdodiad.</body>
+    </message>
+
+	<message id="127">
+		<title>Post dyblyg</title>
+		<body>Mae rheolwr cymuned wedi ffurfweddu&apos;r oriel gyfryngau fel nad yw&apos;n caniatáu post dyblyg.</body>
+	</message>
+
+    <message id="129">
+        <title>Wedi analluogi mewngofnodi gweinyddwr o IP</title>
+        <body>Dydych chi ddim yn gallu mewngofnodi i gyfrif rheolwr cymuned o&apos;ch cyfeiriad IP.</body>
+    </message>
+
+  <message id="130">
+    <title>Heb ddod o hyd i&apos;r dudalen</title>
+    <body>Dydy&apos;r dudalen dan sylw ddim yn rhan o&apos;r thema bresennol.</body>
+  </message>
+
+  <message id="999">
+    <title>Gwall anhysbys</title>
+    <body>Yn anffodus bu gwall anhysbys yn y fforymau Holi ac Ateb. Mae’r gwall hwn wedi cael ei gofnodi.</body>
+  </message>
+
+</root>
