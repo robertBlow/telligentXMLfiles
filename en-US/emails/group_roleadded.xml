@@ -9,7 +9,7 @@ $core_v2_configuration.SiteName: Welcome to $core_v2_group.Current.Name
 			<![CDATA[
 #set($group = $core_v2_group.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<p>You were added as a member of: <a href="$core_v2_groupUrls.Group($group.Id)">$email_utility.RenderHtml($group.Name)</a></p>
 	<p>There are currently <b>$group.TotalMembers</b> members.</p>
 	<p>$email_utility.SiteTerm("groups_propercase") are small sub-communities inside of your larger community to facilitate collaboration.</p>
