@@ -14,11 +14,11 @@ Reply to ${parent.Author.DisplayName}'s message on $core_v2_configuration.SiteNa
 #set($replies = $core_v2_replyMessage.List($parent.Id))
 #set($recipient = $core_v2_user.Current)
 
-<div style="font-family: arial; font-size: 10pt; color: #000000;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px; color: #000000;">
 	<b><a href="$message.Author.ProfileUrl">$message.Author.DisplayName</a> replied:</b> $email_utility.RenderHtml($message.RenderedBody)<br/>
 </div>
 <br />
-<div style="font-family: arial; font-size:10pt; color: #000000; background-color: #F7F7F7; border-width: 5px; border-color: #F7F7F7; border-style: solid;">
+<div style="font-family:Trebuchet MS, arial; font-size:12px; color: #000000; background-color: #F7F7F7; border-width: 5px; border-color: #F7F7F7; border-style: solid;">
 	<b>$parent.Author.DisplayName first posted:</b> $email_utility.RenderHtml($parent)
 
 	#foreach($reply in $replies)
@@ -34,7 +34,7 @@ Reply to ${parent.Author.DisplayName}'s message on $core_v2_configuration.SiteNa
 		</div>
 	#end
 </div>
-<div style="color: #7F7F7F; font-family: arial; font-size: 8pt;">
+<div style="color: #7F7F7F; font-family:Trebuchet MS, arial; font-size: 8pt;">
   <p><a href="$core_v2_urls.ActivityMessage($parent.Id)">View and reply to the message online</a>.</p>
 </div>
 
