@@ -10,7 +10,7 @@
 #set($media = $core_v2_media.Current)
 #set($gallery = $core_v2_gallery.Current)
 
-<div style="font-family: arial; font-size: 12pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12pt;">
 	<p>
 		$media.Author.DisplayName posted <a href="$core_v2_mediaUrls.Media($media.Id)">$media.Title</a> in $gallery.Name:
 	</p>
