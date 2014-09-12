@@ -10,11 +10,11 @@ $message.Author.DisplayName sent you a message: $message.Subject
 			<![CDATA[
 #set($message = $core_v2_conversationMessage.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<b>From:</b> $message.Author.DisplayName<br/>
 	<b>Subject:</b> $message.Subject
 	<div>$email_utility.RenderHtml($message)</div>
-	<div style="font-size: 8pt; color: #7F7F7F;">
+	<div style="font-size: 12px; color: #7F7F7F;">
 		<a href="$core_v2_urls.Conversation($message.ConversationId)">Reply to the message online</a>.
 	</div>
 </div>
