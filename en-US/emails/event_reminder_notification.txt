@@ -16,7 +16,7 @@ You were sent this email because you opted to receive email notifications about 
 #end
 
 #mimebody("text/html")
-<div style="font-family: arial; font-size: 12pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12pt;">
 <h4>REMINDER: $calendarEvent.EventTitle</h4>
 <hr/>
 <p>Just a friendly reminder about this upcoming event...</p>
