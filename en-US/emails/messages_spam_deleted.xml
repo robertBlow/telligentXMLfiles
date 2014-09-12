@@ -10,7 +10,7 @@ $core_v2_configuration.SiteName: message spam deleted
 #set($message = $email_messageContainer.Current.Message)
 #set($moderator = $core_v2_user.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<p style="color: #FF0000">A message was rated as spam by the spam Blocker within $core_v2_configuration.SiteName and deleted.</p>
 	<p>
 		<b>Author:</b> $message.Author.DisplayName<br/>
