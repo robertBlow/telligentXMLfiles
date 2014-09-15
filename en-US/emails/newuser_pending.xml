@@ -7,7 +7,7 @@ $core_v2_configuration.SiteName: membership request awaiting approval
 		</subject>
 		<htmlBody>
 			<![CDATA[
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<p>We have received your membership request to join $core_v2_configuration.SiteName with username "<b>$core_v2_user.Current.Username</b>".</p>
 	<p>Once a community manager has approved your request, you will receive a confirmation email notifying you that your account is active.</p>
 </div>
