@@ -25,7 +25,7 @@ $core_v2_wiki.Current.Name: new comment for $core_v2_wikiPage.Current.Title
 		</p>
 	</div>
 </div>
-<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+<p style="font-family:Trebuchet MS, arial; color: #7F7F7F; font-size: 8pt;">
     <a href="$core_v2_urls.ReportAbuse($core_v2_wikiUrls.Page($post.Id), $comment.CommentId, $comment.CommentContentTypeId)">Flag</a> this comment as spam/abuse.
 </p>
 			]]>
