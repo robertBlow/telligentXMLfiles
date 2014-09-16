@@ -7,7 +7,7 @@ $core_v2_configuration.SiteName: posts Awaiting moderation
 		</subject>
 		<htmlBody>
 			<![CDATA[
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
     There are Q&A posts awaiting your moderation <a href="$core_v2_forumUrls.ModerateForum($core_v2_forum.Current.Id)">here</a>.
 </div>
 			]]>

@@ -9,11 +9,11 @@ $core_v2_wikiPage.Current.Title: Possible wiki spam
 			<![CDATA[
 #set($page = $core_v2_wikiPage.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<p>
 		<strong style="color:#FF0000">A wiki page has been identified as possible spam by the $core_v2_configuration.SiteName spam blocker.</strong>
 	</p>
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<div style="font-size: 12pt; font-weight: bold;">
 		$page.Title
 	</div>
@@ -21,7 +21,7 @@ $core_v2_wikiPage.Current.Title: Possible wiki spam
 	<p>
 		$email_utility.RenderHtml($page)
 	</p>
-	<div style="font-family: arial; font-size: 8pt; color=#7F7F7F;">
+	<div style="font-family:Trebuchet MS, arial; font-size: 12px; color=#7F7F7F;">
 		<a href="$core_v2_wikiUrls.Page($page.Id)">View this page online</a>.<br/>
 		<a href="$core_v2_wikiUrls.ManageWikiPages($page.WikiId)">Manage wiki here</a>. 
 	</div>

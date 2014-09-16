@@ -7,7 +7,7 @@ $core_v2_configuration.SiteName:  membership not approved
 		</subject>
 		<htmlBody>
 			<![CDATA[
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 10pt;">
   <p>
     You requested membership to $core_v2_configuration.SiteName, but your request was not approved.
   </p>

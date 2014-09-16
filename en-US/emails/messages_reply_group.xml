@@ -14,7 +14,7 @@ Reply to your message in $core_v2_group.Current.Name | $core_v2_configuration.Si
 #set($recipient = $core_v2_user.Current)
 #set($group = $core_v2_group.Current)
 
-<div style="font-family: arial; font-size: 10pt; color: #000000;">
+<div style="font-family:Trebuchet MS,arial; font-size: 12px; color: #000000;">
 	<b><a href="$message.Author.ProfileUrl">$message.Author.DisplayName</a> replied:</b> $email_utility.RenderHtml($message.RenderedBody)
 </div>
 <br />
@@ -34,11 +34,11 @@ Reply to your message in $core_v2_group.Current.Name | $core_v2_configuration.Si
 		</div>
 	#end
 </div>
-<div style="color: #7F7F7F; font-family: arial; font-size: 8pt;">
+<div style="color: #7F7F7F; font-family:Trebuchet MS,arial; font-size: 12px;">
   <p><a href="$core_v2_urls.ActivityMessage($parent.Id)">View and reply to the message online</a>.</p>
 </div>
 
-<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+<p style="font-family:Trebuchet MS, arial; color: #7F7F7F; font-size: 12px;">
     <a href="$core_v2_urls.ReportAbuse($core_v2_urls.ActivityMessage($parent.Id), $comment.CommentId, $comment.CommentContentTypeId)">Flag</a> this comment as spam/abuse.
 </p>
 			]]>

@@ -11,7 +11,7 @@ $core_v2_gallery.Current.Name - new comment: $email_utility.RenderText($core_v2_
 #set($media = $core_v2_media.Current)
 #set($gallery = $core_v2_gallery.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$core_v2_mediaUrls.Media($media.Id)">$media.Title</a>: new comment</b>
 	</div>
@@ -21,7 +21,7 @@ $core_v2_gallery.Current.Name - new comment: $email_utility.RenderText($core_v2_
 		$email_utility.RenderHtml($comment.Body)
 	</div>
 	<br/>
-	<div style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+	<div style="font-family:Trebuchet MS, arial; color: #7F7F7F; font-size: 8pt;">
 		<a href="$core_v2_mediaUrls.Media($media.Id)">View the media gallery item online</a>.<br />
 		To unsubscribe from only this thread, <a href="$core_v2_mediaUrls.Media($media.Id)">disable email notifications online</a>.
 	</div>

@@ -10,7 +10,7 @@ $core_v2_wikiPage.Current.Title: revision notice
 #set($page = $core_v2_wikiPage.Current)
 #set($previousRevision = $page.RevisionNumber - 1)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$core_v2_wikiUrls.Page($page.Id)">$page.Title</a>: revision #$page.RevisionNumber</b>
 	</div>
@@ -18,10 +18,10 @@ $core_v2_wikiPage.Current.Title: revision notice
 <div>
 	$email_utility.RenderHtml($page)
 </div>
-<div style="font-family: arial; font-size: 8pt; color=#7F7F7F;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px; color=#7F7F7F;">
 	<a href="$core_v2_wikiUrls.Page($page.Id)">View this post online</a> or <a href="$core_v2_wikiUrls.Compare($page.Id, $previousRevision, 0)">compare this page with earlier revisions</a>.
 </div>
-<p style="font-family: arial; color: #7F7F7F; font-size: 8pt;">
+<p style="font-family:Trebuchet MS, arial; color: #7F7F7F; font-size: 12px;">
     <a href="$core_v2_urls.ReportAbuse($core_v2_wikiUrls.Page($page.Id), $page.ContentId, $page.ContentTypeId)">Flag</a> this page as spam/abuse.
 </p>
 			]]>

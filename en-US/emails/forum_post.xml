@@ -32,7 +32,7 @@ $post.Subject
 	blockquote div.quote-user { font-weight: bold; }
 	blockquote div.quote-content p { margin: 0; font-style: italic; }
 </style>
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$url">$post.Subject</a></b>
 	</div>

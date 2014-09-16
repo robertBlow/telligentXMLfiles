@@ -16,7 +16,7 @@ This invitation will expire on $registration.TokenExpireDate.ToString("MMMM dd, 
 #end
 
 #mimebody("text/html")
-<div style="font-family: arial; font-size: 12pt;">
+<div style="font-family:Trebuchet MS,arial; font-size: 12pt;">
 <h4>You have been invited to $calendarEvent.EventTitle</h4>
 <hr/>
   <p>
