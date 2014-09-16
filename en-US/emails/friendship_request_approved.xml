@@ -9,7 +9,7 @@ $core_v2_configuration.SiteName - $email_utility.SiteTerm("friendship_propercase
 			<![CDATA[
 #set($friendship = $core_v2_friendship.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS,arial; font-size: 12px;">
   <p>
     <b>$friendship.Recipient.DisplayName</b> has accepted your $email_utility.SiteTerm("friendship_lowercase") request.
   </p>

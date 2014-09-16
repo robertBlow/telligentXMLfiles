@@ -14,7 +14,7 @@ $core_v2_forumReply.Current.Subject: answer suggested
 	blockquote div.quote-user { font-weight: bold; }
 	blockquote div.quote-content p { margin: 0; font-style: italic; }
 </style>
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 <div style="font-size:12pt;"><b>The following post by $post.Author.DisplayName was suggested as an answer to "<a href="$core_v2_forumUrls.ForumReply($post.Id)">$post.Subject</a>":</b></div><br/><br/>
 	<div>$email_utility.RenderHtml($post)</div>
 	<div style="background-color:#FFDDDD; border-width: 5px; border-color: #FFDDDD; border-style: solid;">

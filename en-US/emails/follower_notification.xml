@@ -9,7 +9,7 @@ $core_v2_configuration.SiteName : $core_v2_user.Get("%{Id=$core_v2_follower.Curr
 			<![CDATA[
 #set($follow = $core_v2_follower.Current)
 #set($followerUser = $core_v2_user.Get("%{Id=$follow.FollowerId}"))
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family: Trebuchet MS, arial; font-size: 12px">
   <p>
     <b>$followerUser.DisplayName</b> is now following you on $core_v2_configuration.SiteName.
   </p>

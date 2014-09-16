@@ -9,7 +9,7 @@ $core_v2_configuration.SiteName: $core_v2_forum.Current.Name: $core_v2_forumThre
 			<![CDATA[
 #set($thread = $core_v2_forumThread.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	The following thread was moved:<br/><br/>
 	<b>Subject</b>: $thread.Subject<br/>
 	<b>Moved to</b>: $core_v2_forum.Current.Name<br/><br/>

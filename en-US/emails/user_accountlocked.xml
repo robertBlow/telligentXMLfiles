@@ -9,7 +9,7 @@ Account locked: $core_v2_configuration.SiteName
 			<![CDATA[
 #set($unlockTime = $email_utility.ParseInt($email_data.Current.Get("UnlockTime")))
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
   <p>
     Your account has been locked on <a href="$core_v2_urls.Home()">$core_v2_configuration.SiteName</a> due to too many failed login attempts. #if($core_v2_configuration.UnlockTime >= 0) It will be unlocked after a short amount of time. #else contact a community manager to get it unlocked. #end If you didn't try to login, contact a community manager.
   </p>

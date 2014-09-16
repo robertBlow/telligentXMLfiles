@@ -10,7 +10,7 @@ $core_v2_configuration.SiteName: your message was deleted
 #set($message = $email_messageContainer.Current.Message)
 #set($user = $core_v2_user.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
 	<p>
 		$message.Author.DisplayName,<br />
 		The following message that you posted to $core_v2_configuration.SiteName on $core_v2_language.FormatDateAndTime($message.CreatedDate, $user.Id) was detected as spam and automatically deleted.

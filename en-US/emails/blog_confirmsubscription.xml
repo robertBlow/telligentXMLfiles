@@ -10,7 +10,7 @@ $core_v2_blog.Current.Name: subscription confirmation
 #set($blog = $core_v2_blog.Current)
 #set($user = $core_v2_user.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS,  arial; font-size: 12px;">
 	<p>
 		Please <a href="$core_v2_blogUrls.SubscriptionConfirmation($blog.Id, $core_v2_blog.GetSubscriptionId($user.PrivateEmail, $blog.Id))">confirm your subscription</a> to $blog.Name.
 	</p>

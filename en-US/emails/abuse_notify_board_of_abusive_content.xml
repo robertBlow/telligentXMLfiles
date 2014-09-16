@@ -12,7 +12,7 @@ Review needed for post in $core_v2_configuration.SiteName
 #set($appeal = $core_v2_abuseAppeal.Current)
 #set($appealUrl = $core_v2_urls.AppealQueue("%{AbuseAppealId=$appeal.AppealId}", false))
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS,arial; font-size: 12px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$post.Url">$post.HtmlName('Email')</a>: Possibly abusive or spam content</b>
 	</div>

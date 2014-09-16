@@ -9,7 +9,7 @@ $core_v2_configuration.SiteName : $email_utility.SiteTerm("group_propercase") ac
 			<![CDATA[
 #set($group = $core_v2_group.Current)
 
-<div style="font-family: arial; font-size: 10pt;">
+<div style="font-family:Trebuchet MS,arial; font-size: 12px;">
 	<b>$core_v2_user.Current.Username</b> has requested access to $group.Name<br/><br/>
 #set ($message = false)
 #set ($message = $core_v2_groupMembership.Current.Message)
