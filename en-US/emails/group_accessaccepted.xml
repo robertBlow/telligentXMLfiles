@@ -8,7 +8,7 @@ $core_v2_configuration.SiteName: $email_utility.SiteTerm("group_propercase") mem
 		<htmlBody>
 			<![CDATA[
 #set($group = $core_v2_group.Current)
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	Your access request has been approved:<br/>
 	<b>$email_utility.SiteTerm("group_propercase")</b>: $email_utility.RenderHtml($group.Name)<br/>
 	<b>Total members</b>: $group.TotalMembers<br/>

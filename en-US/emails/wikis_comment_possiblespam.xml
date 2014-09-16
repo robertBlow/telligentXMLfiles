@@ -10,11 +10,11 @@ $core_v2_wikiPage.Current.Title: Possible wiki comment spam
 #set($page = $core_v2_wikiPage.Current)
 #set($comment = $core_v2_wikiComment.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<p>
 		<strong style="color:#FF0000">A wiki comment has been identified as possible spam by the $core_v2_configuration.SiteName spam blocker.</strong>
 	</p>
-	<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+	<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 		<div style="font-size: 12pt; font-weight: bold;">
 			Comment:
 		</div>

@@ -9,7 +9,7 @@ Message not posted - Q&A disabled
 			<![CDATA[
 #set($message = $email_emailMessage.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	The message below could not be sent to $core_v2_forum.Current.Name or distributed to the group members because the group owner has disabled the Q&A. Please contact the group owner or a community manager.<br/><br/>
 	<div style="margin: 15px">
 		<b>Subject: $email_utility.RenderHtml($message.Subject)</b><br/>

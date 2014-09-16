@@ -9,7 +9,7 @@ $core_v2_configuration.SiteName - contact request: $core_v2_contactRequest.Curre
 			<![CDATA[
 #set($contactRequest = $core_v2_contactRequest.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<b>Subject</b>: $contactRequest.Subject
 </div>
 <div style="margin: 15px; width: 95%; font-family:Trebuchet MS, arial; font-size: 12px; background-color: #F7F7F7; border-width: 5px; border-color: #F7F7F7; border-style: solid;">

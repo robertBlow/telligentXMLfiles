@@ -10,7 +10,7 @@ $core_v2_wikiPage.Current.Title: Confirmed wiki comment spam
 #set($page = $core_v2_wikiPage.Current)
 #set($comment = $core_v2_wikiComment.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<p>
 		<strong style="color:#FF0000">A wiki comment has been identified as spam by the $core_v2_configuration.SiteName spam blocker.</strong>
 	</p>

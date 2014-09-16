@@ -9,11 +9,11 @@ $core_v2_wikiPage.Current.Title: Possible wiki spam
 			<![CDATA[
 #set($page = $core_v2_wikiPage.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<p>
 		<strong style="color:#FF0000">A wiki page has been identified as possible spam by the $core_v2_configuration.SiteName spam blocker.</strong>
 	</p>
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<div style="font-size: 12pt; font-weight: bold;">
 		$page.Title
 	</div>

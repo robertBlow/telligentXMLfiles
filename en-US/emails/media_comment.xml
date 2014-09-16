@@ -11,7 +11,7 @@ $core_v2_gallery.Current.Name - new comment: $email_utility.RenderText($core_v2_
 #set($media = $core_v2_media.Current)
 #set($gallery = $core_v2_gallery.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$core_v2_mediaUrls.Media($media.Id)">$media.Title</a>: new comment</b>
 	</div>

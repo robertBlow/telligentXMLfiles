@@ -11,7 +11,7 @@ $core_v2_blog.Current.Name: $core_v2_blogPost.Current.Title feedback
 #set($comment = $core_v2_blogComment.Current)
 #set($parent = $core_v2_blogPost.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$core_v2_blogUrls.BlogPost($parent.Id)">$parent.Title</a>: new comment</b>
 	</div>

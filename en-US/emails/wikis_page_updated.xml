@@ -10,7 +10,7 @@ $core_v2_wikiPage.Current.Title: revision notice
 #set($page = $core_v2_wikiPage.Current)
 #set($previousRevision = $page.RevisionNumber - 1)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<div style="font-size: 12pt;">
 		<b><a href="$core_v2_wikiUrls.Page($page.Id)">$page.Title</a>: revision #$page.RevisionNumber</b>
 	</div>

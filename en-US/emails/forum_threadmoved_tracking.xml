@@ -10,7 +10,7 @@ $core_v2_configuration.SiteName: $core_v2_forum.Current.Name: $core_v2_forumThre
 #set($forum = $core_v2_forum.Current)
 #set($post = $core_v2_forumThread.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	The following thread was moved:<br/><br/>
 	<b>Subject</b>:  $post.Subject<br/>
 	<b>Moved to</b>:  $forum.Name<br/><br/>

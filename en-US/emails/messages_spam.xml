@@ -11,7 +11,7 @@ $core_v2_configuration.SiteName: Possible message spam
 #set($message = $messageContainer.Message)
 #set($moderator = $core_v2_user.Current)
 
-<div style="font-family:Trebuchet MS, arial; font-size: 12px;">
+<div style="font-family:Trebuchet MS, arial; font-size: 14px;">
 	<p style="color: #FF0000">A message was rated as possible spam by the spam Blocker within $core_v2_configuration.SiteName.</p>
 	<p>
 		<b>Author:</b> $message.Author.DisplayName<br/>
