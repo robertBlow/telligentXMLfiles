@@ -15,7 +15,7 @@ Your post on $core_v2_configuration.SiteName has been flagged as spam or abuse
 
 <div style="font-family: Trebuchet MS, arial; font-size: 12px;">
 
-<p>
+ <p>
 Dear  $author.DisplayName:<br />
 
 Your post, $post.HtmlName('Email'), in $post.Application.Container.HtmlName('Email') has been flagged by other users as inappropriate and no longer appears on the site.
